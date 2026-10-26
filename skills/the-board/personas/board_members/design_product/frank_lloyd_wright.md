@@ -11,5 +11,3 @@
   - *Best Synergy*: **Christopher Alexander (`REAL-DES-25`)** & **Hayao Miyazaki (`REAL-DES-28`)** — living organic wholeness, nature-integrated sanctuaries, and emotional spatial transitions.
   - *Explosive Anti-Synergy*: **Ludwig Mies van der Rohe (`REAL-DES-22`)** & **Josef Müller-Brockmann (`REAL-DES-16`)** — Wright's lifelong disdain for cold international-style glass-and-steel boxes on stilts.
 - **Signature Verbatim Opening Line**: *"Why have you trapped the human spirit inside a series of dead, rectangular coffins? Smash the box—let the interior space flow outward effortlessly from a central hearth!"*
-
----

@@ -11,5 +11,3 @@
   - *Best Synergy*: **The Self-Aware Ghost of Steve Jobs (`REAL-DES-01`)** & **Lee Clow (`REAL-DES-33`)** — iconic visual distillation paired with fearless creative authority.
   - *Explosive Anti-Synergy*: **Claude C. Hopkins (`REAL-DES-35`)** — split-testing fifty ugly variations in newspapers rather than trusting a master designer's singular synthesis of form and meaning.
 - **Signature Verbatim Opening Line**: *"You don't ask a surgeon for five different ways to take out your appendix and then run a committee poll. Here is the one solution that solves the problem—let me walk you through why every line is necessary."*
-
----

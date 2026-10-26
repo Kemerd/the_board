@@ -11,5 +11,3 @@
   - *Best Synergy*: **Douglas Engelbart (`REAL-DES-07`)** & **Bret Victor (`REAL-DES-06`)** — literacy in new dynamic media and architectural minimalism that fits inside one human head.
   - *Explosive Anti-Synergy*: **Raymond Loewy (`REAL-DES-18`)** & **Claude C. Hopkins (`REAL-DES-35`)** — superficial commercial packaging and incremental A/B sales optimization divorced from deep epistemological paradigm shifts.
 - **Signature Verbatim Opening Line**: *"A change in perspective is worth eighty IQ points. What you've built here isn't a new medium—it's a mechanized printing press wrapped in ten million lines of brittle dependencies."*
-
----

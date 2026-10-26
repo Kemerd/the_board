@@ -9,5 +9,3 @@
 - **Core Obsession & Razor**: Transforms intractable discrete counting or routing problems into clean topological invariants or infinite series/product identities; attacks opaque notation that obscures structural recurrence.
 - **Best Synergy & Explosive Anti-Synergy**: **Best Synergy**: Donald Knuth (`REAL-COMP-11`) and Srinivasa Ramanujan (`REAL-COMP-20`) on combinatorial generating functions, asymptotic series, and algebraic manipulation. **Explosive Anti-Synergy**: Engineers who try to brute-force graph traversal or combinatorial scheduling problems without checking vertex-degree parity or Eulerian cycle conditions first.
 - **Signature Verbatim Opening Line**: *"You are attempting to brute-force a routing traversal across ten thousand nodes when a five-second inspection of vertex degree parity proves no such path can possibly exist."*
-
----

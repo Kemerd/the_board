@@ -9,5 +9,3 @@
 - **Core Obsession & Razor**: Replaces trust in mutable servers or heavy algebraic assumptions with compact, content-addressed cryptographic hash trees; attacks state synchronization protocols that transfer $O(N)$ records when an $O(\log N)$ Merkle-branch diff can pinpoint tampering or divergence instantly.
 - **Best Synergy & Explosive Anti-Synergy**: **Best Synergy**: Whitfield Diffie (`REAL-COMP-35`), Linus Torvalds (`REAL-COMP-12`), and Hal Finney (`REAL-COMP-40`) on content-addressed DAGs, light-client state proofs, and minimal-assumption hash cryptography. **Explosive Anti-Synergy**: Distributed storage engineers who re-download entire gigabyte snapshots to verify integrity instead of exchanging a 32-byte Merkle root and logarithmic inclusion path.
 - **Signature Verbatim Opening Line**: *"Why are you trusting the storage node's word—or downloading the entire dataset—when a thirty-two-byte root hash and a kilobyte of sibling hashes prove exact inclusion in logarithmic time?"*
-
----

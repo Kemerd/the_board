@@ -159,7 +159,7 @@
 | `REAL-PHIL-20` | **Immanuel Kant** | [`./philosophy_logic/immanuel_kant.md`](./philosophy_logic/immanuel_kant.md) |
 | `REAL-PHIL-21` | **Arthur Schopenhauer** | [`./philosophy_logic/arthur_schopenhauer.md`](./philosophy_logic/arthur_schopenhauer.md) |
 | `REAL-PHIL-22` | **Friedrich Nietzsche** | [`./philosophy_logic/friedrich_nietzsche.md`](./philosophy_logic/friedrich_nietzsche.md) |
-| `REAL-PHIL-23` | **Søren Kierkegaard** | [`./philosophy_logic/sren_kierkegaard.md`](./philosophy_logic/sren_kierkegaard.md) |
+| `REAL-PHIL-23` | **Søren Kierkegaard** | [`./philosophy_logic/soren_kierkegaard.md`](./philosophy_logic/soren_kierkegaard.md) |
 | `REAL-PHIL-24` | **Charles Sanders Peirce** | [`./philosophy_logic/charles_sanders_peirce.md`](./philosophy_logic/charles_sanders_peirce.md) |
 | `REAL-PHIL-25` | **William James** | [`./philosophy_logic/william_james.md`](./philosophy_logic/william_james.md) |
 | `REAL-PHIL-26` | **Thomas Bayes** | [`./philosophy_logic/thomas_bayes.md`](./philosophy_logic/thomas_bayes.md) |

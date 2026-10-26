@@ -11,5 +11,3 @@
   - *Best Synergy*: **Dieter Rams (`REAL-DES-02`)**, **Massimo Vignelli (`REAL-DES-14`)**, & **Jan Tschichold (`REAL-DES-17`)** — objective geometric proportion and typographic hierarchy.
   - *Explosive Anti-Synergy*: **Frank Lloyd Wright (`REAL-DES-21`)** & **Zaha Hadid (`REAL-DES-24`)** — organic romanticism and sweeping non-rectilinear deconstructivism that shatter modular Cartesian grids.
 - **Signature Verbatim Opening Line**: *"Show me the underlying baseline grid and column moduli before we discuss a single color or component. When the mathematical proportions of the field are chaotic, the mind of the reader is thrown into chaos."*
-
----

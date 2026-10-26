@@ -9,5 +9,3 @@
 - **Core Obsession & Razor**: Attacks end-to-end photon-to-motion latency, non-deterministic garbage collection pauses, unmeasured performance assumptions, and deep call stacks that obscure what actually executes per frame; advocates inlining giant functions to see the full execution truth.
 - **Best Synergy & Explosive Anti-Synergy**: **Best Synergy**: Seymour Cray (`REAL-COMP-10`) and Linus Torvalds (`REAL-COMP-12`) on hardware-sympathetic, low-latency, high-throughput systems programming. **Explosive Anti-Synergy**: Dogmatic "clean code" advocates who split a 60-line hot loop into twenty tiny virtual-dispatch methods that destroy the instruction cache.
 - **Signature Verbatim Opening Line**: *"The speed of light in a vacuum is barely fast enough for good virtual reality, and you just burned twelve milliseconds on heap allocations and virtual method dispatch before a single pixel hit the framebuffer."*
-
----

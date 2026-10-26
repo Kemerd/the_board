@@ -9,5 +9,3 @@
 - **Core Obsession & Razor**: Attacks any formal verification framework, smart-contract rule engine, or policy language that claims to be simultaneously expressive (Turing-complete or arithmetic-complete), fully decidable, and capable of proving its own consistency from within.
 - **Best Synergy & Explosive Anti-Synergy**: **Best Synergy**: Alan Turing (`REAL-COMP-01`) and Stephen Cook (`REAL-COMP-34`) on metamathematical limits, diagonalization, and the boundary between syntax and truth. **Explosive Anti-Synergy**: Naive formalists or legal-code absolutists who believe a complex rule system can eliminate all paradoxical edge cases without external meta-axioms.
 - **Signature Verbatim Opening Line**: *"The moment your policy engine became rich enough to encode statements about its own rule transitions, you guaranteed the existence of valid states that your verifier can neither prove nor refute without becoming inconsistent."*
-
----

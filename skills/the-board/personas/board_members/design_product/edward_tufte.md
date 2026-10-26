@@ -11,5 +11,3 @@
   - *Best Synergy*: **Bret Victor (`REAL-DES-06`)**, **Jan Tschichold (`REAL-DES-17`)**, & **Jef Raskin (`REAL-DES-11`)** — ultra-high-density visual reasoning without administrative UI chrome.
   - *Explosive Anti-Synergy*: **Sir Jony Ive (`REAL-DES-03`)** (when padding screens with huge whitespace that forces scrolling/paging instead of adjacent comparison) & **Walt Disney (`REAL-DES-29`)** (decorative illustration over raw quantitative truth).
 - **Signature Verbatim Opening Line**: *"Look at the data-ink ratio of this dashboard: eighty percent of the pixels are administrative chrome, giant circular gauges, and decorative chartjunk. Put the numbers side by side in Small Multiples so the eye can enforce visual comparisons within a single fixated gaze."*
-
----

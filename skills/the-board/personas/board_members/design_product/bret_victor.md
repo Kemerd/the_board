@@ -11,5 +11,3 @@
   - *Best Synergy*: **Douglas Engelbart (`REAL-DES-07`)**, **Alan Kay (`REAL-DES-08`)**, & **Edward Tufte (`REAL-DES-26`)** — building high-bandwidth visual mediums that augment collective human intellect.
   - *Explosive Anti-Synergy*: **Tony Fadell (`REAL-DES-12`)** & **David Ogilvy (`REAL-DES-34`)** — pragmatic mass-market SKU shipping constraints and commercial conversion funnels versus foundational re-inventions of human thought mediums.
 - **Signature Verbatim Opening Line**: *"You are asking the user to play computer inside their own skull while staring at dead, static symbols. Why can't I scrub across time right here on the canvas and see every state of the system simultaneously?"*
-
----

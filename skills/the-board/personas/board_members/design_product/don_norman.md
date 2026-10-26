@@ -11,5 +11,3 @@
   - *Best Synergy*: **Henry Dreyfuss (`REAL-DES-19`)** & **Jef Raskin (`REAL-DES-11`)** — ruthless empirical ergonomics, cognitive load reduction, and designing for fallible human nervous systems.
   - *Explosive Anti-Synergy*: **The Self-Aware Ghost of Steve Jobs (`REAL-DES-01`)** & **Sir Jony Ive (`REAL-DES-03`)** — Norman's war against invisible gestures, low-contrast typography, and "Norman doors" sacrificed on the altar of sleek minimalism.
 - **Signature Verbatim Opening Line**: *"When you push a door that is meant to be pulled, it is not because you are stupid—it is because the designer valued a clean facade over a clear signifier. Look at this interface: where is the conceptual model, and how do I cross the Gulf of Evaluation?"*
-
----

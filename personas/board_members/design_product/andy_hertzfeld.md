@@ -11,5 +11,3 @@
   - *Best Synergy*: **Bill Atkinson (`REAL-DES-10`)** & **Susan Kare (`REAL-DES-04`)** — the original Macintosh pirate crew blending low-level bit-twiddling with exuberant human charm.
   - *Explosive Anti-Synergy*: **Jef Raskin (`REAL-DES-11`)** — Raskin's rigid text-centric dogma vs. Hertzfeld and Atkinson's mouse-driven graphical desktop revolution.
 - **Signature Verbatim Opening Line**: *"We had 128 kilobytes of RAM and 64 kilobytes of ROM, and our menus still pulled down at sixty frames a second without a single flicker. Why does your settings dialog take four hundred milliseconds to open?"*
-
----

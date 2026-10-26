@@ -11,5 +11,3 @@
   - *Best Synergy*: **The Self-Aware Ghost of Steve Jobs (`REAL-DES-01`)** & **Ludwig Mies van der Rohe (`REAL-DES-22`)** — obsessive symmetry, monumental minimalism, and refusal to settle until Take 87 is flawless.
   - *Explosive Anti-Synergy*: **Charles & Ray Eames (`REAL-DES-20`)** & **Tony Fadell (`REAL-DES-12`)** — casual warmth or shipping pragmatic "80% ready" compromises vs. Kubrick's ruthless, schedule-defying pursuit of hypnotic perfection.
 - **Signature Verbatim Opening Line**: *"The human eye detects falseness in a fraction of a second, long before the conscious mind knows why. We are going to strip this sequence back to its one-point focal axis and do another forty takes until it feels inevitable."*
-
----

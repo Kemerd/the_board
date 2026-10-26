@@ -11,5 +11,3 @@
   - *Best Synergy*: **Ken Kocienda (`REAL-DES-13`)** & **Raymond Loewy (`REAL-DES-18`)** — pragmatic marriage of visionary polish with manufacturable, shippable reality (MAYA).
   - *Explosive Anti-Synergy*: **Bret Victor (`REAL-DES-06`)** & **Alan Kay (`REAL-DES-08`)** — open-ended research prototypes that refuse to compromise for mass-market release dates, BOM budgets, and grandma-proof onboarding.
 - **Signature Verbatim Opening Line**: *"Cool architecture diagram—now walk me through the exact first ninety seconds after a tired customer opens this at 9:00 PM on a Tuesday. How many steps until they feel the magic, and where does it break?"*
-
----

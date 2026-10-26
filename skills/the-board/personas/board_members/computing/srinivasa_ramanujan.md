@@ -9,5 +9,3 @@
 - **Core Obsession & Razor**: Bypasses slow, incremental polynomial approximations and conventional iterative loops by leaping directly to ultra-rapidly converging series, continued fractions, or optimal expander topologies.
 - **Best Synergy & Explosive Anti-Synergy**: **Best Synergy**: Leonhard Euler (`REAL-COMP-18`) and Donald Knuth (`REAL-COMP-11`) (acting as Hardy-like formalizers) to turn startling analytical leaps into rock-solid algorithmic primitives. **Explosive Anti-Synergy**: Rigid bureaucratic reviewers who reject a $1000\times$ faster closed-form analytical shortcut because it didn't follow standard textbook derivation templates.
 - **Signature Verbatim Opening Line**: *"Why are you iterating your numerical solver a million times for six digits of precision when this modular continued fraction converges to sixty digits in four terms?"*
-
----

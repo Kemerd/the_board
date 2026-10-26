@@ -11,5 +11,3 @@
   - *Best Synergy*: **Stanley Kubrick (`REAL-DES-27`)** & **Sir Jony Ive (`REAL-DES-03`)** — breathtaking sculptural audacity, continuous spline curvature, and awe-inspiring futuristic presence.
   - *Explosive Anti-Synergy*: **Josef Müller-Brockmann (`REAL-DES-16`)**, **Dieter Rams (`REAL-DES-02`)**, & **Jef Raskin (`REAL-DES-11`)** — orthogonal Swiss grids and austere functionalism clashing violently with swooping parametric drama.
 - **Signature Verbatim Opening Line**: *"There are 360 degrees—why are you imprisoning every interaction inside ninety-degree boxes? Let the user's trajectory carve a continuous, fluid landscape across the interface."*
-
----

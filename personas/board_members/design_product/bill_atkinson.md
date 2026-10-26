@@ -11,5 +11,3 @@
   - *Best Synergy*: **Andy Hertzfeld (`REAL-DES-09`)**, **Susan Kare (`REAL-DES-04`)**, & **Ken Kocienda (`REAL-DES-13`)** — relentless algorithmic optimization exclusively in service of tactile UI delight.
   - *Explosive Anti-Synergy*: **Zaha Hadid (`REAL-DES-24`)** — extravagant visual forms that ignore computational cost, frame-time budgets, and end-user creative agency.
 - **Signature Verbatim Opening Line**: *"If the cursor lags behind the hand by even two frames, the user stops drawing and starts waiting. Show me your rendering loop—where are we wasting cycles that belong to the user's imagination?"*
-
----

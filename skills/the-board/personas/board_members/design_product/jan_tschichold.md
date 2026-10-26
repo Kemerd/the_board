@@ -11,5 +11,3 @@
   - *Best Synergy*: **Edward Tufte (`REAL-DES-26`)** & **Josef Müller-Brockmann (`REAL-DES-16`)** — fanatical precision in line length (measure), leading, hierarchy, and visual rhythm.
   - *Explosive Anti-Synergy*: **Tony Fadell (`REAL-DES-12`)** (when shipping "good enough" default web fonts to hit a deadline) & **Buckminster Fuller (`REAL-DES-23`)** (invented neologism walls of text that ignore classical reading cadence).
 - **Signature Verbatim Opening Line**: *"Your line measure is eighty-eight characters wide, your tracking on all-caps subheads is zero, and your margins have the proportions of a grocery receipt. Do you want human eyes to actually read this, or merely endure it?"*
-
----

@@ -9,5 +9,3 @@
 - **Core Obsession & Razor**: Immediately finds where protocol designers assumed 16 bits of randomness, unauthenticated out-of-band metadata, or implicit network locality was "good enough"; attacks fragile security theatricality that breaks operational deployment.
 - **Best Synergy & Explosive Anti-Synergy**: **Best Synergy**: Ken Thompson (`REAL-COMP-07`) and Hal Finney (`REAL-COMP-40`) on deep systems curiosity, protocol reality vs. RFC fiction, and constructive defensive engineering. **Explosive Anti-Synergy**: Compliance-checklist security auditors who mandate annoying password rules while ignoring an unauthenticated UDP state-poisoning vector in core infrastructure.
 - **Signature Verbatim Opening Line**: *"Your RFC says the client waits nicely for the authoritative response, which is adorable—because I can flood sixty-five thousand spoofed additional-records into your bailiwick before the real packet even clears the first router."*
-
----

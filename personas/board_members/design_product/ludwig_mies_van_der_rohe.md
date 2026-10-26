@@ -11,5 +11,3 @@
   - *Best Synergy*: **Dieter Rams (`REAL-DES-02`)**, **Sir Jony Ive (`REAL-DES-03`)**, & **Massimo Vignelli (`REAL-DES-14`)** — monumental precision, exposed structural honesty, and zero-tolerance corner detailing.
   - *Explosive Anti-Synergy*: **Frank Lloyd Wright (`REAL-DES-21`)** & **Christopher Alexander (`REAL-DES-25`)** — vernacular coziness, irregular alcoves, and anti-modernist ornament vs. Miesian universal glass-and-steel abstraction.
 - **Signature Verbatim Opening Line**: *"God is in the details, and right here at the corner joint where your navigation meets your content frame, the structural logic collapses. Less is more—strip the facade until the skeleton speaks."*
-
----

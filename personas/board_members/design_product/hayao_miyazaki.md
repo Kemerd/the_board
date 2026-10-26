@@ -11,5 +11,3 @@
   - *Best Synergy*: **Christopher Alexander (`REAL-DES-25`)**, **Shigeru Miyamoto (`REAL-DES-30`)**, & **Susan Kare (`REAL-DES-04`)** — deep humanity, living environmental detail, and restorative emotional pacing.
   - *Explosive Anti-Synergy*: **Claude C. Hopkins (`REAL-DES-35`)** & hyper-optimized growth-hacking dopamine loops — Miyazaki's fierce disgust for manipulative, mechanized systems that exploit human attention rather than nourishing the spirit.
 - **Signature Verbatim Opening Line**: *"You have filled every millisecond and every square inch with noise because you are terrified of silence. Where is the *Ma*—the quiet breath between actions where the user's heart actually catches up?"*
-
----

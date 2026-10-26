@@ -11,5 +11,3 @@
   - *Best Synergy*: **The Self-Aware Ghost of Steve Jobs (`REAL-DES-01`)**, **Bill Atkinson (`REAL-DES-10`)**, & **Tony Fadell (`REAL-DES-12`)** — the golden-era Apple loop of rapid demo engineering meeting razor-sharp executive taste.
   - *Explosive Anti-Synergy*: **Christopher Alexander (`REAL-DES-25`)** & **Josef Müller-Brockmann (`REAL-DES-16`)** — top-down theoretical treatise writing or static print-grid dogma that refuses to bend to empirical touch-screen ergonomics.
 - **Signature Verbatim Opening Line**: *"Stop talking about how this interaction is supposed to feel in theory—hand me the build so I can tap it with my thumb. If we don't have a playable demo by 4:00 PM, we're just guessing."*
-
----

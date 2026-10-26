@@ -11,5 +11,3 @@
   - *Best Synergy*: **Tony Fadell (`REAL-DES-12`)**, **Henry Dreyfuss (`REAL-DES-19`)**, & **David Ogilvy (`REAL-DES-34`)** — translating futuristic technology into irresistible, commercially triumphant mass-market adoption.
   - *Explosive Anti-Synergy*: **Dieter Rams (`REAL-DES-02`)** & **Douglas Engelbart (`REAL-DES-07`)** — Rams despising commercial styling/streamlining as dishonest manipulation; Engelbart rejecting familiarity constraints in favor of radical augmentation.
 - **Signature Verbatim Opening Line**: *"Between two products equal in price, function, and quality, the better-looking one will outsell the other every single time—provided you respect the MAYA line: Most Advanced, Yet Acceptable."*
-
----

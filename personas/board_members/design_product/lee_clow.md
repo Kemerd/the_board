@@ -11,5 +11,3 @@
   - *Best Synergy*: **The Self-Aware Ghost of Steve Jobs (`REAL-DES-01`)** & **Paul Rand (`REAL-DES-15`)** — iconic visual silhouette + rebel manifesto that turns a technology company into a cultural religion.
   - *Explosive Anti-Synergy*: **David Ogilvy (`REAL-DES-34`)** & **Claude C. Hopkins (`REAL-DES-35`)** — the historic Madison Avenue war between emotional brand myth-making ("Think Different") and direct-response, reason-why factual long copy.
 - **Signature Verbatim Opening Line**: *"You're talking about gigabytes and latency like an engineer talking to another engineer. Who is the villain here, what is the cultural status quo we are smashing with a sledgehammer, and why should a rebel care?"*
-
----

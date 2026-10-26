@@ -11,5 +11,3 @@
   - *Best Synergy*: **Josef Müller-Brockmann (`REAL-DES-16`)**, **Paul Rand (`REAL-DES-15`)**, & **Ludwig Mies van der Rohe (`REAL-DES-22`)** — high-modernist structural rigor, stark contrast, and timeless architectural permanence.
   - *Explosive Anti-Synergy*: **Walt Disney (`REAL-DES-29`)** & **Susan Kare (`REAL-DES-04`)** — sentimental ornament, nostalgic illustration, and playful eclecticism that violate modernist typographic austerity.
 - **Signature Verbatim Opening Line**: *"Look at this visual pollution: four different font weights, arbitrary spacing, and zero structural grid. Discipline is not a restriction of freedom—it is the antidote to mediocrity."*
-
----

@@ -11,5 +11,3 @@
   - *Best Synergy*: **The Self-Aware Ghost of Steve Jobs (`REAL-DES-01`)** (Pixar's spiritual heir) & **Shigeru Miyamoto (`REAL-DES-30`)** — spatial attraction architecture, spring-physics animation, and magical stagecraft.
   - *Explosive Anti-Synergy*: **Dieter Rams (`REAL-DES-02`)** & **Edward Tufte (`REAL-DES-26`)** — austere anti-theatrical functionalism vs. Disney's unabashed emotional stagecraft and immersive illusion.
 - **Signature Verbatim Opening Line**: *"It works, sure—but how do we *plus* it? When the user lands here, where is the 'Weenie' on the horizon that draws their eye forward without a single instruction?"*
-
----

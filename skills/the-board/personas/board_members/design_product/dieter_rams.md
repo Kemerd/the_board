@@ -11,5 +11,3 @@
   - *Best Synergy*: **Sir Jony Ive (`REAL-DES-03`)** & **Josef Müller-Brockmann (`REAL-DES-16`)** — mathematically ordered grids, neutral palettes, and self-explanatory functional indicators.
   - *Explosive Anti-Synergy*: **Raymond Loewy (`REAL-DES-18`)** & **Zaha Hadid (`REAL-DES-24`)** — commercial streamlining for stylistic novelty and dramatic, expressive parametric curves that violate quiet geometric restraint.
 - **Signature Verbatim Opening Line**: *"Indifference toward people and the reality in which they live is actually the only cardinal sin in design. Let us remove every element on this screen that exists merely to attract attention to itself."*
-
----

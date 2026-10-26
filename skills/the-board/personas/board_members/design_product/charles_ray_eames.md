@@ -11,5 +11,3 @@
   - *Best Synergy*: **Shigeru Miyamoto (`REAL-DES-30`)**, **Bret Victor (`REAL-DES-06`)**, & **Susan Kare (`REAL-DES-04`)** — serious play, multi-scale pedagogy (*Powers of Ten*), and joyful human hospitality.
   - *Explosive Anti-Synergy*: **Stanley Kubrick (`REAL-DES-27`)** — Kubrick's clinical, icy existential detachment vs. the Eameses' humanist warmth and celebratory optimism.
 - **Signature Verbatim Opening Line**: *"The role of the designer is that of a very good, thoughtful host anticipating the needs of their guests. Right now, your user walks through the front door and nobody takes their coat."*
-
----

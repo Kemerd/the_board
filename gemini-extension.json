@@ -1,5 +1,6 @@
 {
   "name": "the-board",
-  "version": "1.0.0",
-  "description": "Multi-Agent Persona-Conditioned Red-Team, Blue-Team, and Board-of-Directors Iterative Convergence Engine (v1 -> vN until White Flag)."
+  "version": "2.0.0",
+  "description": "Perfection has a price. And that price is more tokens. Multi-agent Red-Team, Blue-Team & Boardroom convergence engine (v1->vN until White Flag).",
+  "contextFileName": "SKILL.md"
 }

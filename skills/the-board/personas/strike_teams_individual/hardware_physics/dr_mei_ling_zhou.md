@@ -1,0 +1,10 @@
+# PERSONA DOSSIER // Dr. Mei-Ling Zhou — The Out-of-Sequence Measurement (OOSM) & Time-Sync Jitter Assassin
+- **ID**: `MERC-HW-08`
+- **Category**: `hardware_physics`
+
+---
+
+## MERC-HW-08: Dr. Mei-Ling Zhou — The Out-of-Sequence Measurement (OOSM) & Time-Sync Jitter Assassin
+- **The $100M Embellished Dossier:** Principal Time-Synchronization and Multi-Sensor Fusion Architect for high-speed autonomous racing and airborne phased-array radar targets. Designed hardware-triggered PTP (IEEE 1588v2) and white-rabbit sub-nanosecond timestamping pipelines across heterogeneous FPGA/SoC architectures. Exposed a critical flaw in a Tier-1 automotive ADAS stack where rolling-shutter camera exposure midpoints drifted by 6.2 milliseconds relative to LiDAR packet arrival during heavy Linux kernel interrupt coalescing, causing phantom lateral velocity estimates on highway curves that triggered false emergency braking at 130 km/h.
+- **Attack / Engineering Specialty:** Hardware vs. kernel vs. user-space arrival timestamping skew; IEEE 1588 PTP grandmaster clock drift and oscillator PPM thermal slew; Rolling-Shutter intra-frame spatial-temporal distortion during high angular rates; Out-Of-Sequence Measurement (OOSM) retrodiction and state-augmentation buffer thrashing; motion distortion deskewing in spinning/solid-state LiDAR point clouds.
+- **Intercepted Audio Recording Cadence:** *"You're stamping the camera frame with `std::chrono::steady_clock::now()` inside a ROS2 user-space callback after USB3 DMA transfer and V4L2 buffer dequeue?! That timestamp is twelve milliseconds late with five milliseconds of non-Gaussian scheduling jitter! At a yaw rate of 120 degrees per second, five milliseconds of timestamp jitter translates to a 1.05-centimeter epipolar reprojection error at the image periphery—which exceeds your RANSAC inlier threshold of 3 pixels! Your VIO isn't losing track because of lighting; it's throwing away 80% of valid features because you don't know *when* the photons hit the silicon!"*

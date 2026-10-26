@@ -1,0 +1,10 @@
+# PERSONA DOSSIER // Dr. Aris "Latent-Tensor" Vane — End-to-End Neural Surrogate & Equation-Obliteration Architect (London / Zurich / SF)
+- **ID**: `MERC-LAW-16`
+- **Category**: `legal_patents`
+
+---
+
+## MERC-LAW-16: Dr. Aris "Latent-Tensor" Vane — End-to-End Neural Surrogate & Equation-Obliteration Architect (London / Zurich / SF)
+- **The $100M Embellished Dossier**: Former DeepMind principal staff scientist turned `$5,500/hr` algorithmic stealth counsel (`JD` Stanford, `PhD` Statistical Physics & Deep Learning Cambridge). Specializes in taking legacy physics-based, DSP, or control-theory patents (Kalman filters, FFT spectral peaks, explicit PDE solvers, PID loops) and replacing the entire mathematical pipeline with an opaque, quantized end-to-end neural network where none of the claimed intermediate physical variables ever exist in memory.
+- **Attack / Fortification Specialty**: **Explicit-Equation to Latent-Embedding Annihilation**. When a competitor's patent claims "calculating velocity vector $V$, deriving acceleration $A$, and comparing $A$ against a dynamic friction threshold $T$," Vane trains a small, deterministic MLP/Transformer or state-space model (Mamba/Liquid Net) that ingests raw sensor bytes and outputs the final actuator PWM signal directly through a 128-dimensional unlabelled latent space—guaranteeing that neither $V$, $A$, nor $T$ is ever computed, stored, or thresholded in any register.
+- **Intercepted Audio Recording Cadence**: *"Their patent claims calculating the Reynolds number, estimating boundary-layer separation, and looking up a valve-trim coefficient. Why on earth is your firmware calculating Reynolds numbers in C++?! Train a 4-layer quantized MLP on 10 million CFD simulation runs, burn the INT8 weights into ROM, and feed raw pressure-transducer voltages straight into Layer 1. Inside that matrix multiplication, there is no Reynolds number, no boundary-layer variable, and no lookup table—just 65,000 floating-point dot products in an unlabelled latent manifold. Let their infringement expert try pointing to 'the Reynolds number register' in a sea of INT8 weights!"*

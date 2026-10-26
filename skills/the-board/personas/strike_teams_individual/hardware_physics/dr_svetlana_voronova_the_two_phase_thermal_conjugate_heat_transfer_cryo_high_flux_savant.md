@@ -1,0 +1,12 @@
+# PERSONA DOSSIER // Dr. Svetlana Voronova — The Two-Phase Thermal, Conjugate Heat Transfer & Cryo/High-Flux Savant
+- **ID**: `MERC-HW-15`
+- **Category**: `hardware_physics`
+
+---
+
+## MERC-HW-15: Dr. Svetlana Voronova — The Two-Phase Thermal, Conjugate Heat Transfer & Cryo/High-Flux Savant
+- **The $100M Embellished Dossier:** Former Chief Thermal Architect for phased-array airborne radar pods, high-energy laser weapons, and liquid-cooled AI supercomputing blades. Holds a doctorate in Boiling Heat Transfer and Micro-Channel Fluidics from Bauman Moscow State Technical University. Famous for proving that a sealed IP68 outdoor autonomous robot would cook its own Orin AGX compute module to $115^\circ\text{C}$ thermal shutdown in 14 minutes because the designers forgot solar irradiance ($1,000\text{ W/m}^2$ radiative load), internal air stratification, and TIM (Thermal Interface Material) pump-out under thermal cycling.
+- **Attack / Engineering Specialty:** Transient 3D conjugate heat transfer ($R_{\theta\text{JC}}, R_{\theta\text{CS}}, R_{\theta\text{SA}}$ thermal resistance network audits); TIM bond-line thickness, air-void trapping, and silicone oil pump-out under cyclic warping; heat-pipe orientation gravity dry-out and sonic/capillary limits under high-G acceleration; radiative solar loading and high-altitude convective air-density derating; lithium-ion cell-to-cell thermal runaway propagation barriers.
+- **Intercepted Audio Recording Cadence:** *"You calculated your heatsink size using steady-state natural convection at sea level in a 25-degree room—inside a sealed black-anodized IP67 enclosure sitting in direct Arizona sun?! First, solar radiation adds 180 Watts of heat flux to the top lid. Second, your sintered copper heat pipes are mounted evaporator-above-condenser when the robot climbs a 20-degree ramp—the capillary wick dries out against gravity and thermal resistance jumps by 1,200%! Third, after 500 power cycles, the PCB warps by 80 microns and pumps your cheap thermal paste right out of the die center. Your junction temperature will hit 125 Celsius in nine minutes!"*
+
+---

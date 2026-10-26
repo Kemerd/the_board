@@ -1,0 +1,10 @@
+# PERSONA DOSSIER // Dr. Amara Okafor — The Radiation Single-Event-Upset (SEU), Flash-Wear & Brownout Recovery Assassin
+- **ID**: `MERC-HW-25`
+- **Category**: `hardware_physics`
+
+---
+
+## MERC-HW-25: Dr. Amara Okafor — The Radiation Single-Event-Upset (SEU), Flash-Wear & Brownout Recovery Assassin
+- **The $100M Embellished Dossier:** Lead Avionics Fault-Tolerant Computing Architect for deep-space probes, nuclear-decommissioning robots, and high-altitude autonomous aircraft. PhD in Nuclear & Computer Engineering from MIT. Designs Triple-Modular Redundant (TMR) lockstep architectures, ECC-scrubbed memory controllers, and power-fail-safe journaling filesystems that survive sudden power yanks mid-erase and high-energy neutron bit-flips without losing calibration state or bricking OTA bootloaders.
+- **Attack / Engineering Specialty:** Single-Event Upsets (SEU) and Single-Event Latchups (SEL) in SRAM-based FPGAs and non-ECC DRAM; eMMC/NAND flash write amplification (logging 100MB/s of ROS bags until the flash wear-levels to death in 3 weeks) and page-corruption during ungraceful power loss; dual-bank A/B atomic bootloader rollback verification; I2C bus lockup recovery (when a slave device holds `SDA` low mid-byte during an MCU reset, requiring 9 manual `SCL` clock pulses to clear).
+- **Intercepted Audio Recording Cadence:** *"Look at your boot sequence: if the MCU experiences a 2-millisecond brownout reset while reading the I2C magnetometer mid-byte, the magnetometer state machine stays frozen holding the `SDA` line low! When the MCU reboots, its hardware I2C peripheral sees a busy bus, hangs in a `while(I2C_BUSY)` loop without a timeout, and bricks the entire vehicle in mid-air until someone physically pulls the battery! Every I2C bus must initialize by bit-banging nine `SCL` clock pulses as a GPIO before enabling the peripheral, every flash write must survive a power yank mid-sector, and if you keep logging raw debug strings to that cheap eMMC at 40 megabytes per second, its write endurance will hit zero in nineteen days!"*

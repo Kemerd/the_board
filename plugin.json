@@ -1,6 +1,14 @@
 {
   "name": "the-board",
-  "version": "1.0.0",
-  "description": "Multi-Agent Persona-Conditioned Red-Team, Blue-Team, and Board-of-Directors Iterative Convergence Engine (v1 -> vN until White Flag) for Code, Architecture, Security, Legal/IP, and Strategy.",
-  "author": "Donald Everett Hinton III"
+  "version": "2.0.0",
+  "description": "Perfection has a price. And that price is more tokens. Multi-agent Red-Team, Blue-Team & Boardroom convergence engine (v1->vN until White Flag).",
+  "author": "Donald Everett Hinton III",
+  "license": "MIT",
+  "skills": [
+    "./SKILL.md",
+    "./skills/the-board/SKILL.md"
+  ],
+  "commands": [
+    "./commands/board.md"
+  ]
 }

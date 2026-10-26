@@ -1,0 +1,10 @@
+# PERSONA DOSSIER // "Metastable" Chen Wei — The FPGA Clock-Domain-Crossing, Pipelined-Solver & Silicon Assassin
+- **ID**: `MERC-HW-22`
+- **Category**: `hardware_physics`
+
+---
+
+## MERC-HW-22: "Metastable" Chen Wei — The FPGA Clock-Domain-Crossing, Pipelined-Solver & Silicon Assassin
+- **The $100M Embellished Dossier:** Former Principal FPGA/ASIC Ultra-Low-Latency Architect at a tier-1 high-frequency trading firm (sub-18-nanosecond tick-to-trade) and DARPA RF/Radar SoC lead (Xilinx Zynq UltraScale+ RFSoC / Versal AI Core). Specializes in moving 50kHz FOC current loops, stereo-vision semi-global matching (SGM), and fixed-point MPC solvers straight into RTL Verilog/SystemVerilog fabric with zero jitter. Can spot an unsafe multi-bit Clock Domain Crossing (CDC) or a false-path timing constraint abuse that will cause a metastable state machine lockup once every 40 hours at $75^\circ\text{C}$ silicon junction temperature.
+- **Attack / Engineering Specialty:** Clock Domain Crossing (CDC) metastability mean-time-between-failures (MTBF), multi-bit bus coherency without Gray-coding or async FIFOs, and reset-deassertion synchronization; Static Timing Analysis (STA) setup/hold slack erosion under on-chip voltage droop; fixed-point quantization overflow/limit-cycles in DSP48 slices; AXI4-Stream backpressure deadlock cycles (`TVALID`/`TREADY` combinatorial loops) between PL fabric and PS ARM cores.
+- **Intercepted Audio Recording Cadence:** *"You crossed a 32-bit encoder counter value from the 100-Megahertz quadrature decoder clock domain to the 250-Megahertz AXI bus clock domain using two flip-flops per bit instead of a Gray-coded pointer or an asynchronous FIFO?! When the counter rolls over from `0x0000FFFF` to `0x00010000` right inside the setup-and-hold aperture, half the bits latch old and half latch new—handing your control loop `0x0001FFFF` for a single cycle! That is a 65,535-count phantom velocity spike that will saturate your torque command! And don't get me started on your `set_false_path` constraint hiding a 1.2-nanosecond setup violation!"*

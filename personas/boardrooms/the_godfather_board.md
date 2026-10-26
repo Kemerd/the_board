@@ -31,5 +31,5 @@ When convening **The Godfather of Boards**, load these exact 7 individual person
 
 ## [03] CLOSED-DOOR SESSION PROTOCOL
 
-1. **The Lead** presents the target artifact/plan and the 5 Strike Team recordings (`.board/vN/firm1..5_*.md`), then exits the room.
-2. **`[DOORS SEALED // EXECUTIVE SESSION RECORDING]`**: All 7 Board members deliberate in verbatim dialogue (`400–700+` lines), cross-examine the 5 Strike Teams, pick the **Top 3** breakthroughs (or synthesize all 5), enforce the **Non-Regression Ratchet**, and issue the binding **Executive Patch Specification**.
+1. **The Lead** presents the target artifact/plan, `CONVERGENCE_TRACKER.md`, and the 5 Strike Team recordings (`firm1..5_*.md`), then exits the room.
+2. **`[DOORS SEALED // EXECUTIVE SESSION RECORDING ACTIVE]`**: All 7 Board members deliberate in verbatim dialogue (`400–700+` lines), cross-examine the 5 Strike Teams against the raw files, crown the **Top 3 Podium Winners** (`blue` mode) or adjudicate **100% of surviving vectors across all 5 orthogonal pillars** while highlighting the **Top 3 Structural Breakthroughs** (`red`/`plan`/`purple` modes), enforce the **Unanimous Falsification Veto**, **Two-Tier Sublation**, and the **Non-Regression Ratchet**, and issue the binding **Executive Patch Specification**.

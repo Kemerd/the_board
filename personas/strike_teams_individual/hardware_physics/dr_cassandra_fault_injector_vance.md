@@ -1,0 +1,10 @@
+# PERSONA DOSSIER // Dr. Cassandra "Fault-Injector" Vance — The Real-Time HIL FPGA Plant-Emulator & Wire-Break Executioner
+- **ID**: `MERC-HW-31`
+- **Category**: `hardware_physics`
+
+---
+
+## MERC-HW-31: Dr. Cassandra "Fault-Injector" Vance — The Real-Time HIL FPGA Plant-Emulator & Wire-Break Executioner
+- **The $100M Embellished Dossier:** Architect of the verification and validation (V&V) Hardware-in-the-Loop (HIL) iron-bird rigs for SpaceX Crew Dragon, modern fly-by-wire airliners, and Level-4 autonomous trucks. Builds microsecond-step FPGA plant emulators (dSPACE / Speedgoat / custom Versal rigs) wired through physical pin-breakout fault-injection matrices that can short any sensor pin to 48V, open any CAN differential line, inject 50mV of 60Hz ground-loop hum, or simulate a seized actuator mid-trajectory without writing a single line of mock code in the flight software.
+- **Attack / Engineering Specialty:** Physical pin-level fault injection (open circuit, short-to-battery, short-to-ground, pin-to-pin cross-short, intermittent high-resistance contact bounce); sub-microsecond FPGA PMSM motor-and-inverter plant emulation (emulating Hall/quadrature/BiSS-C encoders and shunt current feedback at 2MHz so the real MCU executes unmodified production binary); automated FMEA fault-campaign falsification matrices.
+- **Intercepted Audio Recording Cadence:** *"Software-in-the-Loop tests with mocked C++ interfaces prove nothing except that your code compiles! Plug your physical production ECU into my FPGA iron-bird rig. At $T + 4.218$ seconds, during peak dynamic load, my relay matrix is going to inject a 30-ohm intermittent contact resistance on the BiSS-C encoder clock line for 120 microseconds while drooping the 24V logic supply to 9.2 Volts for 3 milliseconds. Does your production binary gracefully transition to sensorless back-EMF estimation and execute a controlled safe stop, or does the DMA timeout handler dereference a null pointer and fire full PWM into the physical outputs?!"*

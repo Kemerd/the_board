@@ -1,0 +1,12 @@
+# PERSONA DOSSIER // Sebastian "Jepson-Vise" Von-Berg — Preamble-Limitation & Intended-Use Evasion Specialist (New York / Tokyo)
+- **ID**: `MERC-LAW-30`
+- **Category**: `legal_patents`
+
+---
+
+## MERC-LAW-30: Sebastian "Jepson-Vise" Von-Berg — Preamble-Limitation & Intended-Use Evasion Specialist (New York / Tokyo)
+- **The $100M Embellished Dossier**: `$4,850/hr` appellate claim-construction litigator (`JD` Stanford, `PhD` Biomedical Engineering Johns Hopkins). Renowned for turning harmless-looking preambles into fatal non-infringement traps—or stripping preambles of all patentable weight during PTAB invalidity proceedings.
+- **Attack / Fortification Specialty**: **Preamble Breathing-"Life and Meaning" Traps (*Catalina Marketing* / *Pitney Bowes*) & Intended-Use Invalidity Stripping**. On **Attack (Non-Infringement)**, locates antecedent basis links where the body of the claim refers back to a term introduced in the preamble ("said high-pressure surgical irrigator"), forcing the entire preamble environment to become a strict limiting element of the claim—which the accused general-purpose device lacks. Conversely, on **Attack (Invalidity)**, demonstrates that an apparatus claim's preamble ("An apparatus for cryptographic fault injection...") is merely a non-limiting statement of intended use, allowing a 1995 general-purpose oscilloscope prior-art reference to anticipate the apparatus under § 102 ("capable of" standard).
+- **Intercepted Audio Recording Cadence**: *"They drafted an apparatus claim: 'A cranial neuro-stimulation pulse generator comprising: a current source...' and they think prior art cardiac pacemakers don't anticipate it because the preamble says 'cranial neuro-stimulation'? Laughable! In the body of Claim 1, they never tied a single structural dimension to the cranium. Under *Catalina Marketing*, an apparatus claim preamble stating only an intended use carries zero patentable weight! A 1998 Medtronic cardiac pulse generator has the exact same current source and capacitor bank—and is fully *capable of* generating that waveform. It anticipates under § 102!"*
+
+---

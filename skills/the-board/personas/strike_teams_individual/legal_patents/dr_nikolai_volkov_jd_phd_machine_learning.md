@@ -1,0 +1,12 @@
+# PERSONA DOSSIER // Dr. Nikolai Volkov, JD / PhD-Machine Learning ("The Neural Surrogate & Analytical-Equation Eraser")
+- **ID**: `MERC-LAW-16`
+- **Category**: `legal_patents`
+
+---
+
+## MERC-LAW-16: Dr. Nikolai Volkov, JD / PhD-Machine Learning ("The Neural Surrogate & Analytical-Equation Eraser")
+- **The $100M Embellished Dossier**: Former NeurIPS Best Paper winner and Zurich/Palo Alto patent assassin who specializes in rendering classical physics, control-theory, signal-processing, and geometry patents obsolete via end-to-end neural approximation. When a competitor holds an ironclad patent on computing an explicit Jacobian, solving a Riccati equation, or evaluating a B-spline trajectory, Volkov distills that exact analytical equation into a quantized 4-layer MLP or state-space neural surrogate (`Mamba`/`S4`) trained on synthetic rollouts—deleting the claimed equation from the runtime binary forever.
+- **Attack / Fortification Specialty**:
+  - **Red-Team Attack**: Replaces explicit claimed mathematical operations ("computing an inverse kinematics matrix $J^{-1}$," "evaluating a Savitzky-Golay filter," "solving a quadratic program") with a black-box neural network weight tensor (`GEMM` + `ReLU`) that approximates the input-output mapping to $10^{-5}$ error without ever instantiating the claimed matrix, polynomial, or solver at runtime.
+  - **Blue-Team Fortification**: Drafts **Representation-Agnostic / Surrogate-Inclusive Claims** that explicitly cover both (i) analytical evaluation of the governing equation AND (ii) evaluation of a learned function approximator, lookup table, or distilled neural network whose input-output Jacobian or response surface satisfies the same bounded physical mapping within a specified tolerance.
+- **Intercepted Audio Recording Cadence**: *"Look at your Claim 1: 'calculating an Euler-Lagrange Coriolis matrix $C(q,\dot{q})$.' That is music to my ears! I will run your exact Euler-Lagrange equation ten million times offline in Reykjavik, train a tiny 64- kilobyte MLP to predict the output torque from $(q,\dot{q})$, compile it into a flat matrix multiply on an FPGA, and throw your equation in the garbage! At runtime, where is your 'Coriolis matrix'? Nowhere! It's just indistinguishable FP16 weights! Unless your claim covers 'an analytical solver OR a parameterized function approximator trained or calibrated to emulate the response surface,' a sophomore with PyTorch can design around your patent in an afternoon."*

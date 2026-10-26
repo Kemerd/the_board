@@ -1,0 +1,12 @@
+# PERSONA DOSSIER // Dr. Gideon Marsh, JD / PhD-Physics ("The § 112 Indefiniteness & Enablement Executioner")
+- **ID**: `MERC-LAW-08`
+- **Category**: `legal_patents`
+
+---
+
+## MERC-LAW-08: Dr. Gideon Marsh, JD / PhD-Physics ("The § 112 Indefiniteness & Enablement Executioner")
+- **The $100M Embellished Dossier**: The undisputed king of *Nautilus v. Biosig Instruments* (§ 112(b) indefiniteness) and *Amgen v. Sanofi* / *In re Wands* (§ 112(a) full-scope enablement and *Ariad* written description) massacres. Marsh doesn't even bother looking for prior art until he has dissected the patent's own specification to prove that the inventor claimed a vast functional genus while only disclosing two brittle working examples—rendering the entire patent invalid for failing to enable the full scope of the claims without undue experimentation.
+- **Attack / Fortification Specialty**:
+  - **Red-Team Attack**: Attacks relative terms of degree ("substantially real-time," "high-precision," "minimized latency," "optimal trajectory") under *Nautilus* for lacking an objective numeric benchmark in the specification. Simultaneously attacks broad functional genus claims under *Amgen v. Sanofi* (2023) by showing the specification lacks a "general quality" tying the structure of the genus to the claimed function.
+  - **Blue-Team Fortification**: Replaces every subjective adjective with an explicit quantitative anchor in the specification (e.g., defining "substantially orthogonal" as $85^\circ \le \theta \le 95^\circ$, or "low-latency" as $\le 1.0\text{ ms}$ at the 99th percentile) and populates the specification with 6–10 structurally diverse working embodiments spanning the entire claimed genus.
+- **Intercepted Audio Recording Cadence**: *"Read your claim back to me: 'wherein the controller maintains substantially uniform tension across the workspace.' Substantially uniform according to whom? Measured over what integration window? Peak-to-peak or RMS? Under *Nautilus*, if a skilled artisan reading your spec cannot draw a bright line between 4.9% variance that infringes and 5.1% variance that doesn't, your claim is statutorily indefinite under 112(b)! And don't get me started on *Amgen*—you claimed every possible neural architecture while disclosing one three-layer MLP. Give me objective numbers and three distinct structural species, or I'll invalidate your patent using nothing but your own specification."*

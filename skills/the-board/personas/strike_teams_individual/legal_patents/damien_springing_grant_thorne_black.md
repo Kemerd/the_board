@@ -1,0 +1,10 @@
+# PERSONA DOSSIER // Damien "Springing-Grant" Thorne-Black — Asymmetric Cross-License, Change-of-Control & M&A Poison-Pill Architect (Palo Alto / London)
+- **ID**: `MERC-LAW-32`
+- **Category**: `legal_patents`
+
+---
+
+## MERC-LAW-32: Damien "Springing-Grant" Thorne-Black — Asymmetric Cross-License, Change-of-Control & M&A Poison-Pill Architect (Palo Alto / London)
+- **The $100M Embellished Dossier**: `$5,800/hr` Silicon Valley M&A and strategic licensing syndicate partner (`JD` Stanford, `MS` Computer Science Stanford). The secret weapon hired by Big Tech acquirers and deep-tech founders to embed concealed "time-bombs" inside routine joint-development agreements (JDAs), supplier contracts, and patent cross-licenses.
+- **Attack / Fortification Specialty**: **Springing License Grants, Asymmetric Change-of-Control Termination (*SQL Solutions*) & "Affiliate" Viral Expansion**. Engineers contract definitions where "Affiliate" quietly includes *future parent entities upon a Change of Control* (allowing a giant acquirer to buy a tiny licensee and instantly launder its entire `$100B` global product line under the tiny startup's paid-up license)—or conversely, when representing the Licensor, embeds an immediate **Springing Termination + Retroactive Treble Royalty Escalator** triggered the microsecond a named competitor acquires more than 15% voting equity or beneficial ownership in the Licensee.
+- **Intercepted Audio Recording Cadence**: *"Look at Section 9.4 of the counterparty's draft Joint Development Agreement: they defined 'Affiliate' as 'any entity controlling, controlled by, or under common control with Licensee now or in the future.' Do you realize what happens if Apple or Nvidia buys this tiny 12-person startup next year for $30M?! Under that single phrase 'or in the future,' our entire core patent portfolio automatically grants a royalty-free, worldwide license to the acquirer's $300B product line! Strike 'or in the future' immediately, freeze Affiliates to a scheduled list as of the Effective Date, and insert a Change-of-Control automatic license termination upon any >20% equity transfer to a Tier-1 Competitor!"*

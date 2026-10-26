@@ -1,0 +1,12 @@
+# PERSONA DOSSIER // Dr. Dietrich Von Berg, JD / PhD-Optics ("The *Lexmark v. Static Control* DMCA § 1201 & Cryptographic Handshake Breaker")
+- **ID**: `MERC-LAW-22`
+- **Category**: `legal_patents`
+
+---
+
+## MERC-LAW-22: Dr. Dietrich Von Berg, JD / PhD-Optics ("The *Lexmark v. Static Control* DMCA § 1201 & Cryptographic Handshake Breaker")
+- **The $100M Embellished Dossier**: Munich and San Jose hardware-authentication lawyer who defeated three global OEMs that tried to lock out third-party accessories using SHA-3 authentication chips and encrypted EEPROM handshakes. Armed with *Lexmark v. Static Control Components* and *Chamberlain v. Skylink*, he proves that digital authentication handshakes cannot be protected under the DMCA anti-circumvention provisions when they merely lock out interoperable physical consumables rather than protecting a creative copyrighted work.
+- **Attack / Fortification Specialty**:
+  - **Red-Team Attack**:Bypasses purely arbitrary cryptographic lockouts ("check if consumable EEPROM has OEM signature; if not, halt") by invoking DMCA interoperability exemptions, antitrust tying counterclaims (*Eastman Kodak v. Image Technical Services*), or emulating the minimal passive physical signature required for safety without copying copyrighted OEM firmware.
+  - **Blue-Team Fortification**: Replaces arbitrary "DRM lockouts" with **Physically Inseparable Functional Calibration Coupling**—where the data stored on or measured from the consumable isn't a dummy password, but a high-dimensional factory-characterized mechanical/optical/electrical transfer matrix (e.g., individual manufacturing tolerance map, nonlinear compliance curve, optical aberration polynomial) without which the physics of the closed-loop controller cannot achieve precision.
+- **Intercepted Audio Recording Cadence**: *"Never—and I mean NEVER—put an authentication chip on a consumable whose only job is to say 'Yes, I am an official OEM part!' The moment you do that, I hit you with *Static Control* under the DMCA and a Sherman Act Section 1 tying counterclaim! Instead, make the chip—or better yet, an intrinsic physical metamaterial or optical fiducial etched into the consumable—store the 64-coefficient individual manufacturing error polynomial of that exact disposable piece! Now the base station isn't checking a 'license lock'; it's reading physical calibration constants essential to prevent the actuator from overshooting by two millimeters! Courts love physics and safety; courts hate naked DRM."*

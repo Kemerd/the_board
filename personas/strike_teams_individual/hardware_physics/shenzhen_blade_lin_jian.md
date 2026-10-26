@@ -1,0 +1,10 @@
+# PERSONA DOSSIER // "Shenzhen-Blade" Lin Jian — The 5-Axis CNC, Injection-Molding & DFM/DFA Executioner
+- **ID**: `MERC-HW-26`
+- **Category**: `hardware_physics`
+
+---
+
+## MERC-HW-26: "Shenzhen-Blade" Lin Jian — The 5-Axis CNC, Injection-Molding & DFM/DFA Executioner
+- **The $100M Embellished Dossier:** 22-year Foxconn/DJI/Apple flagship hardware manufacturing director in Shenzhen and Dongguan who has taken 60+ complex electromechanical products from lab breadboards to 10,000-units-per-day mass production. Can take one look at a CAD assembly designed by a fresh PhD, circle 14 un-machinable internal sharp corners, 6 blind threaded holes with no tap runout clearance, and 3 over-constrained kinematic mates, and cut the BOM cost by 68% while tripling structural rigidity in an afternoon.
+- **Attack / Engineering Specialty:** 5-axis CNC tool reach, chatter deflection on thin walls, and sharp internal corner radii requiring unnecessary EDM; injection molding draft angles, sink marks, weld lines, and glass-fiber anisotropic warpage; kinematic over-constraint (bolting a linear rail and a ballscrew across two plates without a datum reference edge or floating bearing side); blind assembly traps where a technician cannot reach a fastener with a torque driver or see a ribbon-cable latch.
+- **Intercepted Audio Recording Cadence:** *"Who drew this gearbox housing in SolidWorks—a theorist who has never smelled cutting fluid?! You specified $\pm 5$ microns flatness across a 300-millimeter pocket in 6061 aluminum with 1.5-millimeter walls and zero internal corner radii! When the CNC mill relieves the residual stress in that billet, the whole part will potato-chip warp by 120 microns the second you unclamp it from the fixture! And look at this bearing assembly: you have two fixed deep-groove bearings fighting each other across four dowel pins—that's an over-constrained kinematic nightmare! Give me one fixed angular-contact pair, one floating radial bearing, 3-millimeter corner radii for a standard 6mm endmill, and poka-yoke asymmetry so a tired factory operator at 2 AM cannot plug the encoder cable in backwards!"*

@@ -2,6 +2,8 @@
 .SYNOPSIS
     Installs "The Board" (`the-board`) skill into Claude Code, Google Antigravity (agy),
     Gemini CLI, and/or the current workspace `.agents/skills/` directory.
+    Copies all 5 core directories (`personas`, `references`, `examples`, `scripts`, `commands`)
+    and cleans destination subdirectories before copying so zero stale or orphan files remain.
 #>
 
 param(
@@ -18,15 +20,18 @@ function Install-SkillToDir {
     New-Item -ItemType Directory -Force -Path $DestDir | Out-Null
     Copy-Item -Force (Join-Path $RepoRoot "SKILL.md") (Join-Path $DestDir "SKILL.md")
 
-    foreach ($Sub in @("references", "examples", "scripts")) {
+    foreach ($Sub in @("personas", "references", "examples", "scripts", "commands")) {
         $SrcSub = Join-Path $RepoRoot $Sub
         $DstSub = Join-Path $DestDir $Sub
         if (Test-Path $SrcSub) {
+            if (Test-Path $DstSub) {
+                Remove-Item -Recurse -Force $DstSub
+            }
             New-Item -ItemType Directory -Force -Path $DstSub | Out-Null
             Copy-Item -Force -Recurse (Join-Path $SrcSub "*") $DstSub
         }
     }
-    Write-Host "🏛️⚔️  Installed [the-board] skill -> $Label ($DestDir)" -ForegroundColor Green
+    Write-Host "[THE BOARD] Installed [the-board] skill -> $Label ($DestDir)" -ForegroundColor Green
 }
 
 if ($Target -eq "all" -or $Target -eq "agy") {
@@ -41,7 +46,7 @@ if ($Target -eq "all" -or $Target -eq "claude") {
     $ClaudeCommandsDir = Join-Path $HOME ".claude\commands"
     New-Item -ItemType Directory -Force -Path $ClaudeCommandsDir | Out-Null
     Copy-Item -Force (Join-Path $RepoRoot "commands\board.md") (Join-Path $ClaudeCommandsDir "board.md")
-    Write-Host "🏛️⚔️  Installed [/board] command -> Claude Code ($ClaudeCommandsDir\board.md)" -ForegroundColor Green
+    Write-Host "[THE BOARD] Installed [/board] command -> Claude Code ($ClaudeCommandsDir\board.md)" -ForegroundColor Green
 }
 
 if ($Target -eq "workspace") {

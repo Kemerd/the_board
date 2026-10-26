@@ -22,18 +22,19 @@ Ten apparent synonyms do not map to the same coordinates in a transformer's embe
                               (Saved 400-800+ Line Verbatim War-Room Recordings)
                                        │
                                        ▼
-  [TIER 2: THE BOARDROOM] ──► 6 Real Historical Geniuses (1 .md File Per Person)
-                              (The Lead Presents & Exits -> Doors Lock -> Deliberation)
+  [TIER 2: THE BOARDROOM] ──► 6–7 Real Historical Geniuses (1 .md File Per Person)
+                              (The Lead Presents & Exits -> Doors Seal -> Deliberation)
 ```
 
 ### Why Real Historical Humans Anchor The Board
-Fictional specialist personas (`"Viktor K., 20-year kernel lead"`) give the model a narrow role constraint. **Real historical geniuses (`Alan Turing`, `John von Neumann`, `Nikola Tesla`, `Albert Einstein`, `The Ghost of Steve Jobs`, `Epictetus`)** unlock something far heavier: **thousands of pages of primary-source proofs, lectures, biographies, letters, and cognitive signatures already embedded in the model's weights**.
+Fictional specialist personas (`"Viktor K., 20-year kernel lead"`) give the model a narrow role constraint. **Real historical geniuses (`Alan Turing`, `John von Neumann`, `Nikola Tesla`, `Albert Einstein`, `The Self-Aware Ghost of Steve Jobs`, `Epictetus`, `Emperor Marcus Aurelius`, `Claude Shannon`)** unlock something far heavier: **thousands of pages of primary-source proofs, lectures, biographies, letters, and cognitive signatures already embedded in the model's weights**.
 
-When you seat **Nikola Tesla** across the table from **Alan Turing**, **Epictetus**, and **The Self-Aware Ghost of Steve Jobs**, the model cannot output mediocre corporate filler without violating the deepest statistical priors in its training distribution. Expected output: **genius**.
+When you seat **Nikola Tesla** across the table from **Alan Turing**, **Epictetus**, **Emperor Marcus Aurelius**, and **The Self-Aware Ghost of Steve Jobs**, the model cannot output mediocre corporate filler without violating the deepest statistical priors in its training distribution. Expected output: **genius** (99.9th-percentile primary-source rigor, zero-hedging root-cause adjudication, and non-regressive structural synthesis).
 
 ### Why Volatile Anti-Synergy Inside The Boardroom Matters
-If all 6 Board members share the same worldview, they rubber-stamp each other. By selecting 6 individual `.md` dossiers (`personas/board_members/<category>/<person>.md`) with **documented ideological friction**:
-- **Steve Jobs vs. Claude Shannon / Dennis Ritchie** (visceral human magic vs. mathematical bit-density and Unix minimalism)
+If all `6–7` Board members share the same worldview, they rubber-stamp each other. By selecting `6–7` individual `.md` dossiers (`personas/board_members/<category>/<person>.md`) with **documented ideological friction**:
+- **Epictetus vs. Emperor Marcus Aurelius** (the emancipated slave-sage's pure interior Stoic detachment vs. the supreme Roman Commander-in-Chief's militaristic, authoritarian-realist frontier command at Carnuntum)
+- **Steve Jobs vs. Claude Shannon / Dennis Ritchie** (visceral human magic in 3 seconds vs. mathematical bit-density and Unix minimalism)
 - **Edsger Dijkstra vs. Linus Torvalds** (formal Hoare-logic proofs vs. cache-friendly C pointers on real hardware)
 - **Epictetus vs. Niccolò Machiavelli** (internal Stoic sovereignty vs. ruthless institutional realpolitik)
 the closed-door Boardroom transcript becomes a self-correcting crucible where every weak assumption is attacked from orthogonal angles before the Patch Spec is written.

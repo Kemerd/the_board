@@ -1,60 +1,51 @@
-# Effort Dial, Non-Regression Ratchet & The White-Flag Protocol
-
-## 1. The Effort Dial (`1` to `20` Waves)
-
-Not every task needs 16 waves of adversarial warfare, and not every critical system can afford to stop at Wave 1. `the-board` exposes a deterministic **Effort Dial** that the user can pass directly (e.g., `/board red deep` or `/board red white-flag max=16`):
-
-| Effort Level | Wave Cap | Subagent Topology | Target Use Cases | Convergence Stopping Condition |
-| :--- | :---: | :--- | :--- | :--- |
-| **`strike`** (`1–2` waves) | `2` | 5 Firms + 1 Board (`v1`), optional `v2` verification | PR reviews, bug root-cause isolation, tactical memos, quick architecture sanity checks | Stops after Wave `v1` patch (or `v2` sign-off) |
-| **`standard`** (`3–5` waves) | `5` | Persistent 5 Firms + Board across `v1..v5` | Feature architectures, production services, commercial B2B/DoD strategies, commercial contracts | Stops at `5/5` White Flags or Wave `v5` |
-| **`deep`** (`6–10` waves) | `10` | Persistent 5 Firms + Board + Two-Tier Compression every 3 waves | Zero-day security audits, lock-free/SIMD kernels, core patent claim sets, M&A/licensing deals | Stops at `5/5` White Flags or Wave `v10` |
-| **`relentless` / `white-flag`** (`10–20` waves) | `20` (or custom `N`) | Full `v1..vN` multi-wave siege + Stage `v(N).5` Empirical Sync + Stage `v(N+1)` Pre-Ship Audit | Flagship patent filings, safety-critical flight/medical/crypto systems, foundational protocols | **Refuses to stop** until `5/5` firms raise a verified **Formal White Flag** (`0` surviving vectors) or `max_waves` is reached |
-
----
-
-## 2. How Multi-Wave Escalation Evolves (`v1` -> `v16+`)
-
-Why did our flagship runs discover game-changing flaws in Waves `v7`, `v11`, and `v14` that were completely invisible in Wave `v1`? Because **each wave strips away a defensive layer**, forcing the 5 firms to invent higher-order attacks:
-
-```
-Wave v1–v2   : 1st-Order Defects       (Missing guards, obvious race conditions, literal claim omissions)
-Wave v3–v5   : 2nd/3rd-Order Bypasses  (Cross-module interactions, proxy metrics, duty-cycle/timing evasion)
-Wave v6–v9   : Paradigm-Shift Attacks  (Split-actor/cloud offloading, hardware/sensor aliasing, two-tier structural refactoring)
-Wave v10–v14 : Asymptotic & Edge Sieges (Degraded-mode corner cases, Byzantine fault injection, lifecycle/aftermarket loopholes)
-Wave v15–v16 : White-Flag Convergence  (Every remaining attack requires violating physics, math, or economic survival -> 5/5 White Flags)
+```text
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  [REF // 03]  EFFORT DIAL, BENCH ROTATION, RATCHET & WHITE-FLAG PROTOCOL     ║
+╚══════════════════════════════════════════════════════════════════════════════╝
 ```
 
----
+## [01] THE EFFORT DIAL (`1` TO `20` WAVES) & TEAM TOPOLOGY
 
-## 3. The Three Engineering Safeguards Across Multi-Wave Runs
-
-When running `deep` (`6–10` waves) or `relentless / white-flag` (`10–20` waves), naive iterative editing causes three failure modes: **Regression**, **Bloat**, and **Fake Surrender**. `the-board` prevents all three with mandatory structural invariants:
-
-### Safeguard A: The Non-Regression Ratchet
-Every patch applied by the Executive Lead in Wave `vN` is logged in `.board/CONVERGENCE_TRACKER.md` with a unique Defense ID (`DEF-v1-01`, `DEF-v2-04`, ...).
-- **Rule**: No patch in Wave `vN` is allowed to delete, weaken, or contradict a defense established in Waves `v1..v(N-1)`.
-- **Verification**: The Board's Arbiter #6 (*Cross-Pillar Integration Lead*) explicitly checks every new patch against the cumulative Defense Ledger before approving it.
-
-### Safeguard B: Two-Tier Compression (The Anti-Bloat Pass)
-If you add inline guards or clauses for 12 consecutive waves without refactoring, code turns into spaghetti and legal/patent claims turn into 600-word run-on paragraphs.
-- **Rule**: Every 3 waves (and mandatorily before final sign-off), the Executive Lead executes a **Two-Tier Compression Pass**:
-  - **In Codebases**: Factor verbose defensive checks, invariant validators, and protocol constants into clean, zero-overhead Tier-2 helper modules/types so the Tier-1 hot-path/API remains crystal clear.
-  - **In Legal / Patent Docs**: Move sprawling technical definitions, alternative equivalence lists, and statutory fallback tables into a dedicated **Tier-2 Specification Lexicon / Definitions Section**, keeping **Tier-1 Independent Claims** short, structural, and devastatingly broad.
-
-### Safeguard C: Strict White-Flag Validation (No Lazy Surrenders)
-Subagents are forbidden from raising a White Flag just to finish early. A **Formal White-Flag Concession Certificate** is accepted by The Board **only** if the Firm's transcript demonstrates:
-1. **Verification of Prior Fixes**: Exact line-by-line confirmation that every vector from Wave `v(N-1)` is closed in the current artifact.
-2. **At Least 3 New Candidate Nth-Order Attacks Tested & Falsified**: In the transcript, the 3 personas must propose at least 3 new candidate attacks in their pillar and prove mathematically, physically, or statutorily why the current artifact already defeats them (or why executing the attack would be technically/economically suicidal).
-3. **Zero Surviving Vectors**: The final ledger table explicitly records `0` `CRITICAL`, `0` `HIGH`, and `0` `MEDIUM` surviving vectors.
+| Effort Tier | Wave Cap | Strike Team Count & Rotation Strategy | Ideal Target |
+| :--- | :---: | :--- | :--- |
+| **`strike`** | `1–2` waves | `1–2` (or `5`) Strike Teams + 1 Boardroom pass | Fast PR reviews, tactical memos, quick Pre-Code Plan sanity checks |
+| **`standard`** | `3–5` waves | `5` Persistent Strike Teams + Boardroom across `v1..v5` (optional Bench Rotation) | Production features, API architectures, commercial B2B/DoD playbooks |
+| **`deep`** | `6–10` waves | `5` Persistent Strike Teams + **Default Bench Replacement** on early White Flags + Two-Tier Compression every 3 waves | Lock-free/SIMD kernels, zero-day security audits, M&A/licensing contracts |
+| **`white-flag` / `relentless`** | `Up to 20 waves` (halts upon `5/5` White Flags or Wave 20 ceiling) | `5` Persistent Strike Teams + **Default Bench Replacement** on early White Flags + Cross-Pillar Diff Re-Verification | Flagship patent filings (`v1->v16`), flight/medical/crypto systems, foundational skills |
 
 ---
 
-## 4. The Post-Convergence Finishing Sequence (`Stage v(N).5` + `Stage v(N+1)`)
+## [02] PERSISTENT ADVERSARIAL MEMORY, BENCH ROTATION & CROSS-PILLAR RE-VERIFICATION
 
-Once all 5 Firms raise their White Flags in Wave `vN`, the Executive Lead executes two final polishing stages before declaring victory:
+Across multi-wave runs (`v2..v20`), **The Lead** enforces three laws over Strike Team continuity:
 
-1. **Stage `v(N).5` — Empirical / Benchmark / Data Synchronization**:
-   - Run the compiler, test suite, linter, simulation benchmarks, or document validator (`verify_convergence.py`) and synchronize every table, figure, metric, and cross-reference across the entire workspace.
-2. **Stage `v(N+1)` — Final Pre-Ship Board Sign-Off**:
-   - Convene The Board one final time to audit the synchronized deliverable for zero regressions, zero formatting/compiler warnings, and 100% alignment between all files.
+1. **Persistent Adversarial Memory (`send_message` / `resume`)**:
+   - Keep the exact same 5 Strike Team subagent instances alive across waves whenever open vectors remain in their pillar.
+   - Because Firm 2 remembers how its Wave `v1..v3` attacks were foreclosed by The Board, it cannot repeat dead ideas and is forced to invent genuine **Nth-order paradigm shifts**.
+2. **White-Flag Bench Replacement (`Fresh Blood Protocol` — Default in `deep` and `white-flag`/`relentless`)**:
+   - When a Firm raises an early White Flag while `< 5/5` Firms have converged, **The Lead** benches that Firm and drafts a **fresh reserve Strike Team** from [`personas/strike_teams/`](../personas/strike_teams/) (or selects 3 new individual mercenary `.md` dossiers from [`personas/strike_teams_individual/INDEX.md`](../personas/strike_teams_individual/INDEX.md)) to audit that pillar with fresh eyes—confirming the White Flag was earned and not premature.
+3. **Cross-Pillar Diff Re-Verification Law**:
+   - Whenever a Wave `vN` patch modifies a shared file touched by a previously White-Flagged pillar, that pillar's Strike Team must re-audit the diff in Wave `v(N+1)` to verify zero cross-pillar regressions before its White Flag is retained.
+
+---
+
+## [03] THREE STRUCTURAL SAFEGUARDS ACROSS `v1 -> v20`
+
+### Safeguard 1: The Non-Regression Ratchet
+Every defense added in Wave `vN` is logged in `CONVERGENCE_TRACKER.md` (`DEF-v1-01`, `DEF-v2-04`, ...).
+- **Rule**: No patch in Wave `vN` may delete, weaken, or regress a defense established in Waves `v1..v(N-1)`.
+- **Enforcement**: `CONVERGENCE_TRACKER.md` is passed directly into Template `[D]` on every wave so **The Board** audits every proposed patch against the cumulative Defense Ledger before issuing the Patch Spec, and **The Lead** appends the new `DEF-vN-XX` rows in Phase 3.
+
+### Safeguard 2: Two-Tier Anti-Bloat Compression
+Naive patching over 15 waves turns code into spaghetti and legal/patent claims or plans into bloated walls of text.
+- **Rule**: Every 3 waves (and mandatorily before final sign-off), **The Board** enforces a **Two-Tier Compression Pass**:
+  - **In Code & Plans**: Factor invariants, validation helpers, and protocol tables into clean **Tier-2 modules/headers** so **Tier-1 hot-path logic and core architecture** stay minimal and fast.
+  - **In Skills & Prompts**: Keep `SKILL.md` brutally selective (zero redundant synonyms) while housing deep persona dossiers in modular `.md` files (`personas/board_members/<category>/<person>.md`).
+  - **In Legal & Patents**: Keep **Tier-1 Independent Claims** short and structural while housing broad equivalents in a **Tier-2 Specification Lexicon**.
+
+### Safeguard 3: Earned White-Flag Verification & Board Revocation Authority (`0` Surviving Vectors)
+A Strike Team is forbidden from raising a lazy or straw-man White Flag. The Board and [`scripts/verify_convergence.py`](../scripts/verify_convergence.py) accept `[STATUS: WHITE FLAG RAISED // 0 SURVIVING VECTORS]` **only** when the Firm's saved transcript demonstrates:
+1. Line-by-line verification (`4-State Disposition Table`) proving that every vector from Wave `v(N-1)` is `[DEAD / CHECKMATED (Verified at File:Line)]`.
+2. At least **3 non-suicidal, steel-manned Nth-order candidate attacks** anchored to exact file/line citations and proven mathematically, physically, or statutorily foreclosed by Mask 2 (`The Literal Purist`). Suicidal straw-men are strictly prohibited.
+3. Zero `CRITICAL`, `HIGH`, or `MEDIUM` vectors remaining in the Firm's ledger, and full compliance with minimum line (`>= 250`) and dialogue turn (`>= 10`) thresholds.
+4. **Board White-Flag Revocation Authority (`[WHITE FLAG REVOKED BY BOARD]`)**: If The Board detects that a Firm surrendered using weak straw-men or missed a live vulnerability in its pillar, The Board revokes that Firm's White Flag and orders immediate remediation.

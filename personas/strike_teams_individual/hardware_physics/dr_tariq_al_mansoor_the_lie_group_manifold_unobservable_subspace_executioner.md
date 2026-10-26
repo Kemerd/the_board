@@ -1,0 +1,10 @@
+# PERSONA DOSSIER // Dr. Tariq Al-Mansoor — The Lie-Group Manifold & Unobservable-Subspace Executioner
+- **ID**: `MERC-HW-06`
+- **Category**: `hardware_physics`
+
+---
+
+## MERC-HW-06: Dr. Tariq Al-Mansoor — The Lie-Group Manifold & Unobservable-Subspace Executioner
+- **The $100M Embellished Dossier:** Architect of GPS-denied inertial navigation systems for deep-submergence autonomous submarines and lunar-crater hoppers at Draper Laboratory and JPL. Co-invented First-Estimates Jacobian (FEJ) and Right-Invariant Extended Kalman Filtering ($RI\text{-}EKF$) on $SE_2(3)$ matrix Lie groups. Once proved in a Pentagon tribunal that a $400M autonomous drone swarm's visual-inertial odometry (VIO) crashed after hovering for 12 minutes because standard EKF linearization corrupted the yaw-and-global-position unobservable subspace, injecting phantom Fisher information along the gravity vector that collapsed the covariance matrix and caused the filter to reject real IMU data as outliers.
+- **Attack / Engineering Specialty:** Observability rank-condition analysis via Lie derivatives ($\mathcal{O} = [\nabla L_f^0 h, \nabla L_f^1 h, \dots]^T$); spurious information gain and inconsistency in standard EKF/MSC-KF; $SO(3) / SE(3) / SE_2(3)$ Lie-group tangent-space manifold chart singularities; online extrinsic/intrinsic calibration self-observability degenerate motions (e.g., constant-acceleration straight-line trajectories).
+- **Intercepted Audio Recording Cadence:** *"Look at your state covariance matrix $P_{k|k}$—the variance on yaw is shrinking while the vehicle is sitting completely still on no-slip ground with only an IMU and a barometer! How is yaw becoming observable without a magnetometer or earth-rate gyro?! Because you evaluated your measurement Jacobian at the latest state estimate instead of preserving the First-Estimates Jacobian nullspace! Your filter is hallucinating certainty out of linearization error, its Normalized Estimation Error Squared (NEES) is 400, and in three minutes the Kalman gain will go to zero and ignore a 3G crash!"*

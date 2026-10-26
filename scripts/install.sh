@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# ==============================================================================
+# THE BOARD — Universal Skill Installer (`install.sh`)
+# Installs `the-board` into Claude Code (`~/.claude/skills/the-board`),
+# Google Antigravity / Gemini CLI (`~/.gemini/config/skills/the-board`),
+# or the current workspace (`.agents/skills/the-board`).
+# ==============================================================================
+set -euo pipefail
+
+TARGET="${1:-all}"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+
+install_skill_dir() {
+    local dest_dir="$1"
+    local label="$2"
+    mkdir -p "${dest_dir}/references" "${dest_dir}/examples" "${dest_dir}/scripts"
+    cp -f "${REPO_ROOT}/SKILL.md" "${dest_dir}/SKILL.md"
+    cp -rf "${REPO_ROOT}/references/"* "${dest_dir}/references/"
+    cp -rf "${REPO_ROOT}/examples/"* "${dest_dir}/examples/"
+    cp -rf "${REPO_ROOT}/scripts/"* "${dest_dir}/scripts/"
+    echo "🏛️⚔️  Installed [the-board] skill -> ${label} (${dest_dir})"
+}
+
+if [[ "${TARGET}" == "all" || "${TARGET}" == "agy" ]]; then
+    install_skill_dir "${HOME}/.gemini/config/skills/the-board" "Google Antigravity & Gemini CLI"
+fi
+
+if [[ "${TARGET}" == "all" || "${TARGET}" == "claude" ]]; then
+    install_skill_dir "${HOME}/.claude/skills/the-board" "Claude Code (~/.claude/skills)"
+    mkdir -p "${HOME}/.claude/commands"
+    cp -f "${REPO_ROOT}/commands/board.md" "${HOME}/.claude/commands/board.md"
+    echo "🏛️⚔️  Installed [/board] slash command -> Claude Code (~/.claude/commands/board.md)"
+fi
+
+if [[ "${TARGET}" == "workspace" ]]; then
+    install_skill_dir "$(pwd)/.agents/skills/the-board" "Workspace (.agents/skills/the-board)"
+fi

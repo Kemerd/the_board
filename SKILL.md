@@ -13,9 +13,11 @@ description: >-
 
 # 🏛️⚔️ THE BOARD: Universal Multi-Agent Persona-Conditioned Convergence Skill
 
+> **"Perfection has a price. And that price is more tokens."**
+
 **The Board** turns any AI coding or reasoning agent (**Claude Code, Google Antigravity, Gemini CLI, Cursor, or Codex**) into an adversarial, multi-wave war room.
 
-Instead of asking a single polite assistant to *"review my code"* or *"improve this plan"*, **The Lead** (you, the main conversation agent) dispatches **5 parallel specialist subagents (`Firms 1–5`)** wearing hyper-specific, high-stakes **Persona Masks** who argue in **verbatim roleplayed transcripts**, followed by **The Board of Directors** who adjudicate all 5 reports, pick the **Top 3** (or synthesize all 5), enforce a strict **Non-Regression Ratchet**, and hand **The Lead** a surgical **Patch Spec** to execute across `v1 -> v2 -> ... -> vN` until all 5 firms raise the **White Flag (`🏳️ 5/5`)**.
+Instead of asking a single polite assistant to *"review my code"* or *"improve this plan"*, **The Lead** (you, the main conversation agent) dispatches **5 parallel specialist subagents (`Firms 1–5`)** wearing hyper-specific, high-stakes **Persona Masks** who argue in **verbatim roleplayed transcripts saved permanently to disk (`.board/v1..vN/firm1..5_*.md`)**, followed by **The Board of Directors (`vN/BOARD_ADJUDICATION_vN.md`)** who adjudicate all 5 reports, pick the **Top 3** (or synthesize all 5), enforce a strict **Non-Regression Ratchet**, and hand **The Lead** a surgical **Patch Spec** to execute across `v1 -> v2 -> ... -> vN` until all 5 firms raise the **White Flag (`🏳️ 5/5`)**.
 
 ---
 

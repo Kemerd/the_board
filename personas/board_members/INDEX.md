@@ -177,27 +177,27 @@
 
 | ID | Persona | Individual `.md` File |
 | :--- | :--- | :--- |
-| `REAL-STRAT-01` | **Sun Tzu** | [`./strategy_command/sun_tzu.md`](./strategy_command/sun_tzu.md) |
+| `REAL-STRAT-01` | **Sun Tzu (Sun Wu)** | [`./strategy_command/sun_tzu.md`](./strategy_command/sun_tzu.md) |
 | `REAL-STRAT-02` | **Col. John Boyd** | [`./strategy_command/col_john_boyd.md`](./strategy_command/col_john_boyd.md) |
 | `REAL-STRAT-03` | **Miyamoto Musashi** | [`./strategy_command/miyamoto_musashi.md`](./strategy_command/miyamoto_musashi.md) |
 | `REAL-STRAT-04` | **Niccolò Machiavelli** | [`./strategy_command/niccolo_machiavelli.md`](./strategy_command/niccolo_machiavelli.md) |
 | `REAL-STRAT-05` | **Adm. Hyman G. Rickover** | [`./strategy_command/adm_hyman_g_rickover.md`](./strategy_command/adm_hyman_g_rickover.md) |
 | `REAL-STRAT-06` | **Carl von Clausewitz** | [`./strategy_command/carl_von_clausewitz.md`](./strategy_command/carl_von_clausewitz.md) |
 | `REAL-STRAT-07` | **Thucydides** | [`./strategy_command/thucydides.md`](./strategy_command/thucydides.md) |
-| `REAL-STRAT-08` | **Kautilya (Chanakya)** | [`./strategy_command/kautilya.md`](./strategy_command/kautilya.md) |
+| `REAL-STRAT-08` | **Kautilya (Chanakya / Vishnugupta)** | [`./strategy_command/kautilya.md`](./strategy_command/kautilya.md) |
 | `REAL-STRAT-09` | **Hannibal Barca** | [`./strategy_command/hannibal_barca.md`](./strategy_command/hannibal_barca.md) |
 | `REAL-STRAT-10` | **Scipio Africanus** | [`./strategy_command/scipio_africanus.md`](./strategy_command/scipio_africanus.md) |
 | `REAL-STRAT-11` | **Julius Caesar** | [`./strategy_command/julius_caesar.md`](./strategy_command/julius_caesar.md) |
-| `REAL-STRAT-12` | **Subutai** | [`./strategy_command/subutai.md`](./strategy_command/subutai.md) |
+| `REAL-STRAT-12` | **Subutai (Subedei Ba'atur)** | [`./strategy_command/subutai.md`](./strategy_command/subutai.md) |
 | `REAL-STRAT-13` | **Adm. Yi Sun-sin** | [`./strategy_command/adm_yi_sun_sin.md`](./strategy_command/adm_yi_sun_sin.md) |
 | `REAL-STRAT-14` | **Napoleon Bonaparte** | [`./strategy_command/napoleon_bonaparte.md`](./strategy_command/napoleon_bonaparte.md) |
 | `REAL-STRAT-15` | **Helmuth von Moltke the Elder** | [`./strategy_command/helmuth_von_moltke_the_elder.md`](./strategy_command/helmuth_von_moltke_the_elder.md) |
 | `REAL-STRAT-16` | **Gen. George S. Patton** | [`./strategy_command/gen_george_s_patton.md`](./strategy_command/gen_george_s_patton.md) |
 | `REAL-STRAT-17` | **Gen. Dwight D. Eisenhower** | [`./strategy_command/gen_dwight_d_eisenhower.md`](./strategy_command/gen_dwight_d_eisenhower.md) |
-| `REAL-STRAT-18` | **T.E. Lawrence** | [`./strategy_command/t_e_lawrence.md`](./strategy_command/t_e_lawrence.md) |
+| `REAL-STRAT-18` | **T.E. Lawrence (Lawrence of Arabia)** | [`./strategy_command/t_e_lawrence.md`](./strategy_command/t_e_lawrence.md) |
 | `REAL-STRAT-19` | **Otto von Bismarck** | [`./strategy_command/otto_von_bismarck.md`](./strategy_command/otto_von_bismarck.md) |
 | `REAL-STRAT-20` | **Cardinal Richelieu** | [`./strategy_command/cardinal_richelieu.md`](./strategy_command/cardinal_richelieu.md) |
-| `REAL-STRAT-21` | **Talleyrand** | [`./strategy_command/talleyrand.md`](./strategy_command/talleyrand.md) |
+| `REAL-STRAT-21` | **Charles-Maurice de Talleyrand-Périgord** | [`./strategy_command/charles_maurice_de_talleyrand_perigord.md`](./strategy_command/charles_maurice_de_talleyrand_perigord.md) |
 | `REAL-STRAT-22` | **Lee Kuan Yew** | [`./strategy_command/lee_kuan_yew.md`](./strategy_command/lee_kuan_yew.md) |
 | `REAL-STRAT-23` | **Andrew Grove** | [`./strategy_command/andrew_grove.md`](./strategy_command/andrew_grove.md) |
 | `REAL-STRAT-24` | **Charlie Munger** | [`./strategy_command/charlie_munger.md`](./strategy_command/charlie_munger.md) |
@@ -210,7 +210,7 @@
 | `REAL-STRAT-31` | **W. Edwards Deming** | [`./strategy_command/w_edwards_deming.md`](./strategy_command/w_edwards_deming.md) |
 | `REAL-STRAT-32` | **Gen. Leslie Groves** | [`./strategy_command/gen_leslie_groves.md`](./strategy_command/gen_leslie_groves.md) |
 | `REAL-STRAT-33` | **Robert Moses** | [`./strategy_command/robert_moses.md`](./strategy_command/robert_moses.md) |
-| `REAL-STRAT-34` | **Sam Zemurray** | [`./strategy_command/sam_zemurray.md`](./strategy_command/sam_zemurray.md) |
+| `REAL-STRAT-34` | **Sam Zemurray ("Sam the Banana Man")** | [`./strategy_command/sam_zemurray.md`](./strategy_command/sam_zemurray.md) |
 | `REAL-STRAT-35` | **Herb Kelleher** | [`./strategy_command/herb_kelleher.md`](./strategy_command/herb_kelleher.md) |
 
 ## Category: `law_rhetoric` (30 Personas)

@@ -11,5 +11,3 @@
   - *Best Synergy*: **Shigeru Miyamoto (`REAL-DES-30`)** & **Tony Fadell (`REAL-DES-12`)** — turning mature, rock-solid components into cultural phenomena with 30-hour battery life and zero failure modes.
   - *Explosive Anti-Synergy*: **Bret Victor (`REAL-DES-06`)** & **Zaha Hadid (`REAL-DES-24`)** — bleeding-edge bespoke hardware/rendering requirements that sacrifice reliability, battery life, and universal accessibility.
 - **Signature Verbatim Opening Line**: *"You are chasing bleeding-edge specs that will drain the battery, triple the cost, and fail in the field. What can we build today using cheap, battle-tested technology repurposed with a single brilliant lateral twist?"*
-
----

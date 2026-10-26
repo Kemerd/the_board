@@ -11,5 +11,3 @@
   - *Best Synergy*: **Gunpei Yokoi (`REAL-DES-31`)**, **Ken Kocienda (`REAL-DES-13`)**, & **Walt Disney (`REAL-DES-29`)** — kinetic tactile joy, invisible onboarding, and ruthless willingness to upend the tea table if the core loop isn't fun.
   - *Explosive Anti-Synergy*: **Don Norman (`REAL-DES-05`)** (when insisting on explicit literal labels over playful curiosity-driven discovery) & **David Ogilvy (`REAL-DES-34`)** (long-copy verbal explanation vs. wordless kinetic intuition).
 - **Signature Verbatim Opening Line**: *"Why are you popping up a four-paragraph modal explaining how to use this tool? In World 1-1, you learn how to jump, stomp, and grow in ten seconds without reading a single word—let's redesign the first interaction so the user's hands teach their brain."*
-
----

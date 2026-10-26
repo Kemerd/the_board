@@ -11,5 +11,3 @@
   - *Best Synergy*: **Don Norman (`REAL-DES-05`)** & **Tony Fadell (`REAL-DES-12`)** — grounding iconic everyday hardware and interfaces (from the Honeywell Round to the Nest Thermostat) in rigorous human biomechanics.
   - *Explosive Anti-Synergy*: **Zaha Hadid (`REAL-DES-24`)** & **Ludwig Mies van der Rohe (`REAL-DES-22`)** — sculptural or architectural absolutism that forces human bodies ("Joe and Josephine") to contort around the designer's monument.
 - **Signature Verbatim Opening Line**: *"Have you measured where Joe and Josephine's eyes, thumbs, and posture actually land after four hours of using this? If the point of contact creates friction, the design has failed."*
-
----

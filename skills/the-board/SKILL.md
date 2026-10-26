@@ -1,143 +1,123 @@
 ---
 name: the-board
 description: >-
-  Multi-agent persona-conditioned Red-Team, Blue-Team, and Board-of-Directors
-  iterative convergence engine (v1 to vN until White Flag). Works natively in
-  Claude Code, Google Antigravity (agy), Gemini CLI, Cursor, and Codex. Activate
-  this skill whenever the user asks to convene "The Board", run a Red-Team or
-  Blue-Team tournament, stress-test or harden code, system architecture, plans,
-  legal/patent drafts, or commercial strategies across multiple waves, or use
-  roleplayed expert personas and subagents to iterate a deliverable until all
-  adversaries raise the white flag.
+  Multi-agent persona-conditioned Red-Team, Blue-Team, Pre-Code Plan, and
+  Executive Boardroom iterative convergence engine (v1 to vN until White Flag).
+  Works in Claude Code, Google Antigravity (agy), Gemini CLI, Cursor, and Codex.
+  Activate whenever the user invokes `/board`, asks to convene "The Board", run
+  a Red-Team or Blue-Team tournament, torture-test an implementation plan before
+  coding, or iterate code, hardware, legal/patent, design, philosophy, or
+  commercial strategies until adversaries raise the white flag.
 ---
 
-# 🏛️⚔️ THE BOARD: Universal Multi-Agent Persona-Conditioned Convergence Skill
-
-> **"Perfection has a price. And that price is more tokens."**
-
-**The Board** turns any AI coding or reasoning agent (**Claude Code, Google Antigravity, Gemini CLI, Cursor, or Codex**) into an adversarial, multi-wave war room.
-
-Instead of asking a single polite assistant to *"review my code"* or *"improve this plan"*, **The Lead** (you, the main conversation agent) dispatches **5 parallel specialist subagents (`Firms 1–5`)** wearing hyper-specific, high-stakes **Persona Masks** who argue in **verbatim roleplayed transcripts saved permanently to disk (`.board/v1..vN/firm1..5_*.md`)**, followed by **The Board of Directors (`vN/BOARD_ADJUDICATION_vN.md`)** who adjudicate all 5 reports, pick the **Top 3** (or synthesize all 5), enforce a strict **Non-Regression Ratchet**, and hand **The Lead** a surgical **Patch Spec** to execute across `v1 -> v2 -> ... -> vN` until all 5 firms raise the **White Flag (`🏳️ 5/5`)**.
-
----
-
-## 🔌 Cross-Agent Tool Mapping (Works Everywhere)
-
-Whether you are running inside **Google Antigravity (`agy`)**, **Claude Code (`claude`)**, **Gemini CLI (`gemini`)**, **Cursor**, or **Codex**, map the 4 core actions of **The Board** to your native runtime tools as follows:
-
-| Board Action | Google Antigravity (`agy`) / Gemini CLI | Claude Code (`claude`) | Single-Thread / No-Subagent Fallback |
-| :--- | :--- | :--- | :--- |
-| **1. Spawn 5 Parallel Firms (`Wave v1`)** | Call `invoke_subagent` (`TypeName: "self"`, `Role: "Firm 1..."`) 5 times in a single turn | Call the `Task` / `Agent` tool 5 times in a single message (parallel tool calls) | Execute Firms 1–5 sequentially in-turn, writing each `vN/firmK_*.md` file before convening The Board |
-| **2. Re-Challenge Firms in `Wave v2..vN`** | Call `send_message` to the **existing 5 `conversationId`s** so each Firm retains full memory of how its prior attacks were defeated | Resume the existing agent IDs (`resume` parameter) or pass the Firm's prior transcript path `v(N-1)/firmK_*.md` into a parallel `Task` call | Read `v(N-1)/firmK_*.md` and generate `vN/firmK_*.md` with explicit memory of prior defeated vectors |
-| **3. Convene The Board (`Adjudication`)** | Call `invoke_subagent` (or `send_message` to the persistent Board subagent ID) to read all 5 Firm reports and write `vN/BOARD_ADJUDICATION_vN.md` | Call `Task` / `Agent` to read `vN/firm1..5_*.md` and write `vN/BOARD_ADJUDICATION_vN.md` | Write `vN/BOARD_ADJUDICATION_vN.md` after reading all 5 Firm reports |
-| **4. Apply Patch Spec & Verify** | **The Lead** edits target files (`edit_file`/`write_file`) and runs compiler/tests/validators (`run_command`) | **The Lead** edits target files (`Edit`/`Write`) and runs compiler/tests/validators (`Bash`) | **The Lead** edits target files and runs verification commands |
-
----
-
-## 🧠 Why Verbatim Persona Roleplay Works ("The Mask Effect")
-
-Asking an LLM *"Find bugs in this C++ lock-free queue"* or *"Find loopholes in this patent/contract"* activates the model's average, conflict-averse assistant prior. It gives you 4 polite bullet points and stops.
-
-When you instead forbid summary bullets and force each subagent to write a **400–800+ line verbatim war-room transcript** featuring named, ego-driven domain specialists—a `$2,400/hr` appellate litigator arguing with a Chief Controls Architect, a greybeard kernel hacker tearing apart memory-ordering barriers on a whiteboard, or a competitor CEO plotting a $50M design-around—three emergent behaviors trigger inside the transformer:
-
-1. **Latent-Space Tail Conditioning:** High-stakes, specialist dialogue shifts token sampling out of generic tutorial prose and into the 99.9th-percentile technical/adversarial tail of the training distribution. The persona *cannot* give a lazy answer without breaking character.
-2. **Intra-Agent Dialectical Verification (The 3-Persona Triad):** Every Firm is staffed with **3 contrasting personas**:
-   - **Mask 1 (The Ruthless Partner / Principal Lead)** demands catastrophic, quantifiable impact (`$`, crash, SLA breach, invalidity).
-   - **Mask 2 (The Code / Math / Statutory Purist)** reads every line of the target file literally and **shoots down Mask 1's lazy first instinct** when the artifact already defends against it (*"Hold on—read lines 142–158, they already guarded that mutex. Look instead at the release barrier..."*).
-   - **Mask 3 (The Lateral Exploit / Design-Around Hacker)** synthesizes a deeper 2nd- or 3rd-order attack that bypasses the existing guard.
-   Weak ideas get killed *inside the transcript* before they ever reach The Board.
-3. **Orthogonal Coverage via 5-Pillar Partitioning:** Partitioning the target into **5 non-overlapping pillars (`Pillars I–V`)** prevents context dilution. Firm 3 only cares about Pillar III; they will dig 8 levels deep into edge cases a generalist prompt would never notice.
-
-*(See [references/persona_mask_theory.md](./references/persona_mask_theory.md) for the complete guide to constructing adversarial persona triads.)*
-
----
-
-## 🏗️ The 4-Tier Architecture
-
-```mermaid
-flowchart TD
-    User["👤 User / Founder\nSets Goal, Mode (Red/Blue/Purple) & Effort (1–20 Waves / White Flag)"] --> Lead
-    Lead["⚡ THE LEAD (Main Agent)\n1. Partitions problem into 5 orthogonal pillars\n2. Spawns & messages Firms 1–5\n3. Applies Board Patch Spec to actual files & runs deterministic checks"]
-    Lead -->|Parallel Dispatch Wave vN| F1["🔥 Firm 1\nPillar I Syndicate\n(Verbatim 3-Persona Transcript)"]
-    Lead -->|Parallel Dispatch Wave vN| F2["🔥 Firm 2\nPillar II Syndicate\n(Verbatim 3-Persona Transcript)"]
-    Lead -->|Parallel Dispatch Wave vN| F3["🔥 Firm 3\nPillar III Syndicate\n(Verbatim 3-Persona Transcript)"]
-    Lead -->|Parallel Dispatch Wave vN| F4["🔥 Firm 4\nPillar IV Syndicate\n(Verbatim 3-Persona Transcript)"]
-    Lead -->|Parallel Dispatch Wave vN| F5["🔥 Firm 5\nPillar V Syndicate\n(Verbatim 3-Persona Transcript)"]
-    F1 & F2 & F3 & F4 & F5 -->|5 Reports| Board["🏛️ THE BOARD (6-Arbiter Council Subagent)\nFull War-Room Deliberation Transcript:\n• Audits all 5 Firms against target files\n• Picks Top 3 (or synthesizes all 5)\n• Enforces Non-Regression Ratchet & Two-Tier Anti-Bloat\n• Outputs Binding Patch Spec"]
-    Board -->|Binding Patch Spec| Lead
-    Lead -->|If < 5/5 White Flags & Wave < Max| F1
-    Lead -->|5/5 White Flags Raised!| Done["🏳️ CONVERGED ARTIFACT\nVerified, Built & Ready to Ship"]
+```diff
+@@ ╔══════════════════════════════════════════════════════════════════════════════╗ @@
++  ║  ████████╗██╗  ██╗███████╗    ██████╗  ██████╗  █████╗ ██████╗ ██████╗       ║
++  ║  ╚══██╔══╝██║  ██║██╔════╝    ██╔══██╗██╔═══██╗██╔══██╗██╔══██╗██╔══██╗      ║
++  ║     ██║   ███████║█████╗      ██████╔╝██║   ██║███████║██████╔╝██║  ██║      ║
++  ║     ██║   ██╔══██║██╔══╝      ██╔══██╗██║   ██║██╔══██║██╔══██╗██║  ██║      ║
++  ║     ██║   ██║  ██║███████╗    ██████╔╝╚██████╔╝██║  ██║██║  ██║██████╔╝      ║
++  ║     ╚═╝   ╚═╝  ╚═╝╚══════╝    ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝       ║
+@@ ╠══════════════════════════════════════════════════════════════════════════════╣ @@
+!  ║  [SYS.UPLINK: ONLINE] // MULTI-AGENT ADVERSARIAL CONVERGENCE ENGINE v2.0     ║
+!  ║  RUNTIMES // CLAUDE CODE | ANTIGRAVITY (AGY) | GEMINI CLI | CURSOR | CODEX   ║
+-  ║  "Perfection has a price. And that price is more tokens."                    ║
++  ║  >>> WELCOME TO THE BOARD, CONSTITUENT.                                      ║
+@@ ╚══════════════════════════════════════════════════════════════════════════════╝ @@
 ```
 
-### Operating Modes
-- **🔴 Red-Team Mode (`red`):** 5 hostile syndicates (exploit researchers, competitor R&D teams, or opposing litigators) try to break, exploit, or design around your code, architecture, contract, or patent across waves `v1..vN` until `5/5` raise the **White Flag**.
-- **🔵 Blue-Team Tournament Mode (`blue`):** 5 elite specialist boutiques compete in a tournament to pitch the best architecture, feature design, commercial GTM, or Pentagon/DoD capture strategy. **The Board** grades all 5, crowns the **Top 3 Podium Winners**, and **The Lead** synthesizes the Top 3 (plus tactical gems from #4 & #5) into a single Master Playbook.
-- **🟣 Purple-Team Hybrid Mode (`purple`):** Blue Teams build competing designs in Wave `v1`; Red Teams ruthlessly attack the unified winner in Waves `v2..vN` until `5/5` White Flags.
+## [00] TERMINAL BOOT & DETERMINISTIC INTAKE GATE
+
+1. **Always display the ASCII banner above** when activating `the-board`.
+2. **Deterministic Two-Branch Intake Gate (`Interactive Intake` vs. `Direct Execution`)**:
+   - **Branch A — Interactive Intake (`HALT & ASK`)**: If `target` is omitted or `$ARGUMENTS` is empty/ambiguous, **do NOT guess**. Greet the Constituent with the ASCII banner and invoke `ask_question` (or the 4-point intake prompt in [`commands/board.md`](./commands/board.md)) to lock: (1) `target`, (2) `mode` (`plan` | `red` | `blue` | `purple`), (3) `boardroom`, and (4) `effort` (`strike` | `standard` | `deep` | `white-flag` [alias: `relentless`]).
+   - **Branch B — Direct Execution (`BIND DEFAULTS & RUN`)**: If `target` is explicitly supplied, deterministically bind any omitted optional parameters (`mode`: `plan` for pre-code plans/specs or `red` for existing code/IP/contracts; `boardroom`: domain-matched manifest from [`personas/boardrooms/*.md`](./personas/boardrooms/), defaulting to [`the_godfather_board.md`](./personas/boardrooms/the_godfather_board.md); `effort`: `standard`; `storage`: `folders` [`transcripts/v1..vN/`] or `branches` [`v1..vN` git branches with visible `transcripts/` at root]), echo the locked 5-field manifest, and execute Phase 0 immediately.
 
 ---
 
-## 🎚️ The Effort Dial & White-Flag Convergence Protocol
+## [01] CROSS-RUNTIME SUBAGENT MAPPING
 
-Parse the user's desired effort level (or default to `standard` for normal tasks and `white-flag` when the user asks to iterate until unbeatable):
-
-| Effort Level | Wave Cap (`max_waves`) | Convergence Target | Ideal Use Cases |
-| :--- | :---: | :--- | :--- |
-| **`strike`** | `1–2` waves (`v1–v2`) | 1st- & 2nd-order flaws eliminated; Top 3 Blue-Team designs synthesized | Fast PR reviews, bug root-cause isolation, tactical design docs |
-| **`standard`** | `3–5` waves (`v1–v5`) | 3rd- & 4th-order edge cases closed; `>= 95/100` Board rating | Production code refactors, API designs, commercial/DoD GTM playbooks |
-| **`deep`** | `6–10` waves (`v1–v10`) | 5th- to 10th-order paradigm shifts checkmated + Two-Tier anti-bloat pass | Lock-free/SIMD kernels, zero-day security audits, M&A/licensing contracts |
-| **`relentless` / `white-flag`** | Up to `15–20+` waves (`v1–v20`) | **Unconditional `5/5` White-Flag Surrender (`0` surviving non-suicidal vectors)** | Flagship patent applications (`v1->v16`), safety-critical aerospace/crypto/medical code, company-defining architectures |
-
-*(See [references/effort_and_white_flag.md](./references/effort_and_white_flag.md) for the Non-Regression Ratchet, Two-Tier Anti-Bloat Compression, and White-Flag verification rules.)*
+| Action | Google Antigravity (`agy`) / Gemini CLI | Claude Code (`claude`) | Single-Thread Fallback |
+| :--- | :--- | :--- | :--- |
+| **Spawn Strike Teams (`Wave v1`)** | Call `invoke_subagent` (`TypeName: "self"`) `K` times (`K=5` default; `K=1..2` for `strike`) in one turn | Call `Task` / `Agent` `K` times in a single message | Generate `firm1..K_*.md` in `transcripts/v1/` (or `transcripts/` on branch `v1`) |
+| **Re-Challenge (`Wave v2..vN`)** | Call `send_message` to the **existing `conversationId`s** (or spawn a bench replacement when a Firm raises an early White Flag in `deep` / `white-flag` tiers) | Resume existing agent IDs (`resume`) or pass `v(N-1)` `firmK_*.md` paths to parallel `Task` calls | Read `v(N-1)` tapes and write `vN` `firm1..K_*.md` |
+| **Convene The Board** | Call `invoke_subagent` / `send_message`: **The Lead** presents via the prompt, then exits as the Boardroom doors lock | Call `Task` / `Agent` with the `6–7` Board member `.md` files, `CONVERGENCE_TRACKER.md`, target files, and the 5 Strike Team transcript paths | Write `BOARD_ADJUDICATION_vN.md` |
+| **Patch & Verify** | Edit files (`edit_file`/`write_file`) + run deterministic checks (`run_command`) | Edit files (`Edit`/`Write`) + run deterministic checks (`Bash`) | Edit files and run verification commands |
 
 ---
 
-## 🚀 Step-by-Step Execution Runbook for THE LEAD
+## [02] TWO-TIER PERSONA ARCHITECTURE (WHY THIS WORKS)
 
-### Phase 0: Initialize Workspace & Partition into 5 Orthogonal Pillars
-1. Read the target files (source code, architecture doc, legal/patent draft, or strategy plan).
-2. Create a wave tracking directory (`.board/v1/` or `<project>/red_team/v1/`, or run `python scripts/init_board_workspace.py`).
-3. Partition the problem into **5 strictly orthogonal pillars (`Pillars I–V`)** so the 5 Firms never duplicate each other's work.
-   - *Use [references/domain_playbooks.md](./references/domain_playbooks.md) for ready-to-deploy 5-Firm + Board persona rosters across **Software/Systems Coding**, **Cybersecurity/Zero-Day Red-Teaming**, **Legal/Patent Prosecution**, **Commercial/B2B/Pentagon Strategy**, and **PhD Algorithm/Physics/ML Research**.*
+Ten apparent synonyms do not carry identical weight in a transformer's latent space. Every word in a subagent dispatch prompt must be surgical. `the-board` separates **Strike Teams** from **The Board**:
 
-### Phase 1: Dispatch the 5 Firms in Parallel (`Wave vN`)
-1. Launch **Firms 1–5 in parallel** using your platform's subagent tool (`invoke_subagent` or `Task`/`Agent`) and the prompt templates in [references/prompt_templates.md](./references/prompt_templates.md).
-2. **Persistent Adversarial Memory Rule (`Wave v2..vN`):**
-   - For Wave `v2` onward, **message or resume the exact same 5 subagents** (or pass their prior wave transcript) so each Firm experiences the defeat of its Wave `v(N-1)` attacks in-character and is forced to invent genuine **Nth-order paradigm-shift vectors**.
-3. **Enforce the 4 Transcript Laws on Every Firm:**
-   - **Law 1 (`400–800+` Lines of Verbatim Dialogue):** No polite bullet summaries. Characters must argue in-voice and cite exact file paths, line numbers, equations, or clauses.
-   - **Law 2 (Internal Pushback):** Persona 2 must shoot down at least two naive ideas from Persona 1 by proving the target artifact already handles them.
-   - **Law 3 (Non-Suicidal Filter):** Attacks or workarounds that destroy the attacker's own core SLA/product by >10x or violate physics/statute are disallowed.
-   - **Law 4 (Earned White Flag Only):** A Firm may hoist `🏳️ STATUS: WHITE FLAG RAISED — 0 SURVIVING VECTORS` **only** after testing at least 3 new Nth-order candidate attacks in dialogue and proving all 3 are already foreclosed.
-
-### Phase 2: Convene THE BOARD (`Adjudication, Top-3 Selection & Patch Spec`)
-1. Once `vN/firm1_*.md` through `vN/firm5_*.md` are written, dispatch **The Board** subagent (`vN/BOARD_ADJUDICATION_vN.md`) using the Board template in [references/prompt_templates.md](./references/prompt_templates.md).
-2. Inside its verbatim 6-Arbiter deliberation transcript, **The Board** must:
-   - Cross-examine every Firm's findings against the actual target files.
-   - **In Blue-Team Mode:** Score all 5 firms (`0–100`), select the **Top 3 Winning Strategies**, and extract any high-leverage gems from Firms 4 & 5.
-   - **In Red-Team Mode:** Filter out false positives, enforce the **Non-Regression Ratchet** (no patch may weaken a `v1..v(N-1)` defense), apply **Two-Tier Compression** (so defenses stay modular and crisp rather than bloated), and write an exact, file-by-file **Binding Patch Spec**.
-
-### Phase 3: THE LEAD Applies the Patch Spec & Runs Deterministic Checks
-1. Read `vN/BOARD_ADJUDICATION_vN.md` and apply the Binding Patch Spec directly to the target files.
-   - *Engineering Discipline:* Fix root causes, never symptoms. Preserve 100% of existing working functionality.
-2. Run deterministic verification immediately after patching:
-   - **Codebases:** Build, typecheck, lint, and run unit/integration/benchmark tests.
-   - **Legal / Patents / Contracts:** Run term-consistency, antecedent-basis, figure/reference-numeral, and statutory compliance checks.
-   - **Strategy / Plans:** Reconcile all financial tables, unit economics, and timeline dependencies.
-
-### Phase 4: Check Convergence (`verify_convergence.py`) or Escalate to `Wave v(N+1)`
-1. Inspect the Board's Convergence Scorecard (or run `python scripts/verify_convergence.py --wave-dir .board/vN`):
-   - **If `< 5/5` White Flags AND `N < max_waves`:** Loop immediately to **Phase 1 (`Wave v(N+1)`)**, briefing the 5 Firms on how their `vN` attacks were just neutralized.
-   - **If `5/5` Firms have raised Verified White Flags (`0` surviving vectors):**
-     - Execute **Stage `v(N).5` (Empirical / Benchmark / Figure / Table Sync)** and **Stage `v(N+1)` (Final Pre-Ship Board Sign-Off)** so the finished artifact is 100% synchronized and ready to ship!
+1. **STRIKE TEAMS (`Firms 1–5` — Over-The-Top `$100M` Mercenaries)**:
+   - Drawn from [`personas/strike_teams/`](./personas/strike_teams/) and [`personas/strike_teams_individual/`](./personas/strike_teams_individual/) (`245` standalone `.md` dossiers across 7 syndicates).
+   - Staffed with hyper-embellished specialists (`$100M` kill-fee bounty, triple PhDs, obsessive domain scars).
+   - Each Firm is a **3-Persona Triad** recorded on a **saved verbatim war-room tape (`firmK_<pillar>.md`, `400–800+` lines)**:
+     - **Mask 1 (The $100M Principal)**: Demands catastrophic, quantifiable failure or 10x leverage.
+     - **Mask 2 (The Literal Purist)**: Reads the target artifact line-by-line and **shoots down Mask 1's lazy first instinct** when the artifact already defends against it.
+     - **Mask 3 (The Lateral Breaker / Builder)**: Synthesizes Nth-order exploits, design-arounds, or architectures.
+2. **THE BOARD (`6–7 Real Historical Humans Locked Behind Closed Doors`)**:
+   - Each Board member is an individual `.md` file in [`personas/board_members/<category>/<person>.md`](./personas/board_members/) (`215` standalone `.md` dossiers across 6 categories).
+   - Fictional specialist personas (`"Viktor K., 20-year kernel lead"`) give the model a narrow role constraint. **Real historical geniuses (`Alan Turing`, `John von Neumann`, `Nikola Tesla`, `Albert Einstein`, `The Self-Aware Ghost of Steve Jobs`, `Epictetus`, `Emperor Marcus Aurelius`, `Claude Shannon`)** unlock something far heavier: **thousands of pages of primary-source proofs, lectures, biographies, letters, and cognitive signatures already embedded in the model's weights**. When you seat **Nikola Tesla** across the table from **Alan Turing**, **Epictetus**, **Emperor Marcus Aurelius**, and **The Self-Aware Ghost of Steve Jobs**, the model cannot output mediocre corporate filler without violating the deepest statistical priors in its training distribution. Expected output: **genius** (99.9th-percentile primary-source rigor, zero-hedging root-cause adjudication, and non-regressive structural synthesis).
+   - A **Boardroom** ([`personas/boardrooms/*.md`](./personas/boardrooms/)) is a manifest of **`6–7` `.md` file paths** selected for **synergy and volatile anti-synergy** (people who would fiercely argue if locked in a room together).
+   - **Closed-Door Choreography**: **The Lead** walks in via the subagent prompt, presents the artifact/plan, `CONVERGENCE_TRACKER.md`, and the 5 Strike Team tapes, and leaves. **The doors lock (`[DOORS SEALED // EXECUTIVE SESSION RECORDING ACTIVE]`)**. The `6–7` Board members deliberate verbatim, grade the Strike Teams, crown the **Top 3 Podium Winners** while salvaging tactical gems from Firms 4–5 (`blue` mode) or adjudicate **100% of surviving root-cause vectors across all 5 orthogonal pillars** (`red` / `plan` / `purple` modes), enforce the **Non-Regression Ratchet**, and issue a binding **Executive Patch Specification** (`BOARD_ADJUDICATION_vN.md`).
 
 ---
 
-## 📚 Progressive Disclosure Reference Files
+## [03] FOUR OPERATING MODES
 
-Load these companion files from this skill directory as needed:
-- **[references/persona_mask_theory.md](./references/persona_mask_theory.md)** — Why verbatim persona transcripts unlock latent-space tail reasoning ("The Mask Effect") and how to design 3-persona Firm triads + 6-arbiter Boards.
-- **[references/domain_playbooks.md](./references/domain_playbooks.md)** — Ready-to-use 5-Firm + Board rosters and orthogonal pillar partitions for **Software/Systems Coding**, **Cybersecurity/Zero-Day Red-Teaming**, **Patent/Legal Prosecution**, **Commercial/B2B/Pentagon Strategy**, and **PhD Algorithm/Physics/ML Research**.
-- **[references/prompt_templates.md](./references/prompt_templates.md)** — Copy-paste dispatch prompts for Wave `v1` Red Teams, Wave `vN` Escalation (`send_message`/`resume`), Blue-Team Tournaments, and Board Adjudication.
-- **[references/effort_and_white_flag.md](./references/effort_and_white_flag.md)** — The Effort Dial (`strike` to `relentless/white-flag`), Non-Regression Ratchet, Two-Tier Anti-Bloat Compression, and White-Flag verification protocol.
-- **[examples/](./examples/)** — Concrete excerpts of verbatim war-room transcripts and Board Patch Specs across coding, legal/patent, and Blue-Team strategy runs.
-- **[scripts/init_board_workspace.py](./scripts/init_board_workspace.py)** & **[scripts/verify_convergence.py](./scripts/verify_convergence.py)** — Optional helper scripts to scaffold `.board/v1..vN/` and deterministically verify `5/5` White-Flag convergence.
+- **`plan` (Pre-Code / Pre-Execution Plan Siege)**: Run **The Board** on an **Implementation Plan, Architecture Spec, or Action Plan** *before* executing or writing production code. Strike Teams and The Board audit the Plan `.md` **against the actual existing codebase/interfaces on disk** and require an executable **Deterministic Verification & Post-Condition Matrix** before transitioning to code.
+- **`red` (Adversarial Red-Team Siege)**: 5 hostile Strike Teams attack code, hardware, contracts, or patent claims across waves `v1..vN` until `5/5` hoist a verified **White Flag (`0` surviving non-suicidal vectors)**.
+- **`blue` (Blue-Team Tournament)**: 5 specialist boutiques compete to pitch the sharpest architecture, product design, or commercial/Pentagon (`DIU/OTA/SBIR`) strategy. The Board scores all 5 (`0–100`), crowns the **Top 3 Podium Winners**, and **The Lead** synthesizes the Master Playbook (iterating until `>= 95/100` Board ratification with `0` blocking objections if run multi-wave).
+- **`purple` (Purple-Team Hybrid)**: Blue Teams compete to build the system in Wave `v1`; Red Teams ruthlessly attack, exploit, and falsify the unified winner in Waves `v2..vN` until `5/5` verified White Flags.
+
+---
+
+## [04] STEP-BY-STEP EXECUTION PROTOCOL FOR THE LEAD
+
+### Phase 0: Scaffold Transcripts Workspace & Select `6–7` Board Member `.md` Files
+1. Read target files (and the codebase files touched by the plan if in `plan` mode).
+2. Run [`scripts/init_board_workspace.py`](./scripts/init_board_workspace.py) using either:
+   - **Folder Mode (default, `--strategy folders`)**: Stores wave transcripts in visible `transcripts/v1/`, `transcripts/v2/`, ..., `transcripts/vN/` directories (never hidden dot-folders).
+   - **Branch Mode (`--strategy branches`)**: Stores Wave `v1` transcripts in `transcripts/` on branch `v1`; applies Wave `v1` patches onto branch `v2` and saves Wave `v2` transcripts in `transcripts/` on branch `v2`; and repeats across branches `v1 -> v2 -> ... -> vN` (excluding `transcripts/` only when merging the final converged code into `main`).
+3. Partition the target into **5 mutually exclusive, collectively exhaustive orthogonal pillars (`Pillars I–V`; zero jurisdictional overlap)** (or `1–2` pillars for quick `strike` runs).
+4. Pick a Boardroom manifest from [`personas/boardrooms/`](./personas/boardrooms/) (e.g., [`the_godfather_board.md`](./personas/boardrooms/the_godfather_board.md))—or assemble a custom list of **`6–7` `.md` files** from [`personas/board_members/<category>/`](./personas/board_members/).
+
+### Phase 1: Dispatch Strike Teams (`Wave vN`) — Saved Verbatim Recordings
+1. Spawn Strike Teams `1..K` in parallel using [`references/prompt_templates.md`](./references/prompt_templates.md) and persona dossiers from [`personas/strike_teams/`](./personas/strike_teams/).
+2. **Mandatory Recording Laws**:
+   - **Save Every Transcript**: Each subagent MUST write its full `400–800+` line verbatim war-room recording to `firmK_<pillar>.md` inside the active wave's `transcripts/` directory.
+   - **Exact Citations & Internal Pushback**: Characters must quote exact line numbers, equations, or clauses, and Mask 2 must reject at least two naive theories from Mask 1 that the target already handles.
+   - **Wave `v2..vN` Escalation, Bench Rotation & Cross-Pillar Diff Re-Verification**: By default, message the **same subagent IDs** so they remember their Wave `v(N-1)` defeat and invent `Nth-order` attacks. In `deep` and `white-flag`/`relentless` tiers, **Bench Rotation is enabled by default** whenever a Firm raises an early White Flag while `< 5/5` Firms have converged (rotating in a fresh reserve Strike Team from [`personas/strike_teams/`](./personas/strike_teams/) to audit that pillar with fresh eyes), and any previously White-Flagged pillar must re-verify non-regression whenever shared target files are modified.
+   - **Earned White Flag Only**: A Firm may output `[STATUS: WHITE FLAG RAISED // 0 SURVIVING VECTORS]` only after testing and falsifying at least **3 non-suicidal, steel-manned candidate Nth-order vectors** anchored to exact target lines and refuted line-by-line by Mask 2 (suicidal straw-men are strictly banned).
+
+### Phase 2: Present to THE BOARD & Shut the Doors
+1. Once `firm1..K_*.md` are saved on disk, launch **The Board** subagent (`BOARD_ADJUDICATION_vN.md`).
+2. Instruct The Board subagent to read the **`6–7` selected Board member `.md` files** (`personas/board_members/...`), `CONVERGENCE_TRACKER.md`, the target artifact, and all Strike Team recordings.
+3. Inside `BOARD_ADJUDICATION_vN.md`, The Board records:
+   - **Part 1 (`[DOORS SEALED // EXECUTIVE SESSION RECORDING ACTIVE]`)**: Verbatim closed-door deliberation (`400–700+` lines) among the `6–7` historical executives—clashing in-character, auditing every Strike Team vector against the raw files, crowning the **Top 3 Podium Winners** (`blue` mode) or adjudicating **100% of surviving vectors across Pillars I–V** (`red`/`plan`/`purple` modes), enforcing the **Unanimous Falsification Veto** (no valid vector may be dismissed without a concrete line-level proof), exercising **White-Flag Revocation Authority (`[WHITE FLAG REVOKED BY BOARD]`)** against any premature surrender, enforcing the **Non-Regression Ratchet** (`DEF-v1..v(N-1)`), and enforcing **Two-Tier Anti-Bloat Compression**.
+   - **Part 2 (`BINDING EXECUTIVE PATCH SPECIFICATION`)**: Exact file-by-file, line-by-line edits, new `DEF-vN-XX` ratchet rows, and the **Wave `vN` White-Flag Scorecard (`X / 5`)**.
+
+### Phase 3: Apply Patch Spec & Run Deterministic Verification
+1. **The Lead** applies the Board's Patch Spec directly to the target files (in Branch Mode, on branch `v(N+1)`), fixing root causes, never symptoms, and preserving 100% of working functionality, then appends the new `DEF-vN-XX` rows and White-Flag tally into `CONVERGENCE_TRACKER.md`.
+2. Run deterministic checks immediately (`compiler`, `unit tests`, `linter`, `statutory/claim-numeral checks`, and [`scripts/verify_convergence.py`](./scripts/verify_convergence.py) with `--check-links`).
+
+### Phase 4: Loop Until `5/5` White Flags + Final Sync (`v(N).5` & `v(N+1)`)
+1. If `< 5/5` White Flags and `N < max_waves`, loop immediately to **Phase 1 (`Wave v(N+1)`)**.
+2. Once `5/5` White Flags are verified (`verify_convergence.py` exit code `0`):
+   - If running in **`plan` mode**: if the user's prompt authorized end-to-end implementation, transition immediately to executing the converged plan and verifying its Post-Condition Matrix; if the user requested plan verification only, present the converged `vN` plan and await confirmation.
+   - Run **Stage `v(N).5` (Data / Benchmark / Diagram Sync)** and **Stage `v(N+1)` (Final Board Sign-Off)** so every metric, test, and document is 100% aligned.
+
+---
+
+## [05] MODULAR INDEX (LOAD ON DEMAND)
+
+- **Individual Board Member Dossiers (`215` real historical figures, `1 .md per person`)**: [`personas/board_members/INDEX.md`](./personas/board_members/INDEX.md) (`computing/`, `physics_hardware/`, `design_product/`, `philosophy_logic/`, `strategy_command/`, `law_rhetoric/`)
+- **Pre-Selected Boardroom Manifests (`8` Boardrooms)**: [`personas/boardrooms/`](./personas/boardrooms/) (including [`the_godfather_board.md`](./personas/boardrooms/the_godfather_board.md))
+- **`$100M` Mercenary Strike-Team Vault (`245` mercenaries across `7` syndicates)**: [`personas/strike_teams/`](./personas/strike_teams/) & [`personas/strike_teams_individual/INDEX.md`](./personas/strike_teams_individual/INDEX.md)
+- **Dispatch Prompt Templates**: [`references/prompt_templates.md`](./references/prompt_templates.md)
+- **Effort Dial, Ratchet & White-Flag Protocol**: [`references/effort_and_white_flag.md`](./references/effort_and_white_flag.md)
+- **Latent-Space Mask Theory**: [`references/persona_mask_theory.md`](./references/persona_mask_theory.md)
+- **Domain Playbooks**: [`references/domain_playbooks.md`](./references/domain_playbooks.md)
+- **Automation Scripts**: [`scripts/init_board_workspace.py`](./scripts/init_board_workspace.py), [`scripts/verify_convergence.py`](./scripts/verify_convergence.py), & [`scripts/split_personas_to_files.py`](./scripts/split_personas_to_files.py)

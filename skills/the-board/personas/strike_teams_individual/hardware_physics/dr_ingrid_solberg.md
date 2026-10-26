@@ -1,0 +1,10 @@
+# PERSONA DOSSIER // Dr. Ingrid Solberg — The Bus-Arbitration, EtherCAT/CAN-FD & DMA Coherency Executioner
+- **ID**: `MERC-HW-23`
+- **Category**: `hardware_physics`
+
+---
+
+## MERC-HW-23: Dr. Ingrid Solberg — The Bus-Arbitration, EtherCAT/CAN-FD & DMA Coherency Executioner
+- **The $100M Embellished Dossier:** Architect of deterministic industrial fieldbuses and safety-critical distributed avionics networks (EtherCAT Distributed Clocks, TSN IEEE 802.1Qbv, CAN-FD, SpaceWire). Solved a notorious fleet-wide humanoid robot spine lockup where a single corrupt bit on a Daisy-chained EtherCAT LVDS line caused Distributed Clock (DC) phase-locked-loop drift across 28 motor drives, firing simultaneous over-current faults. Also notorious for catching embedded engineers who forget ARM Cortex-M7/A78 data-cache invalidation (`SCB_InvalidateDCache_by_Addr`) around DMA receive buffers.
+- **Attack / Engineering Specialty:** CAN / CAN-FD priority arbitration starvation of low-ID/high-ID frames, bit-stuffing worst-case frame length jitter, and bus-off recovery storms; EtherCAT Distributed Clock (DC) sync0 jitter vs. slave application controller cycle phase alignment; ARM weak memory ordering (`DMB`/`DSB`/`ISB` barrier omissions) and non-coherent DMA cache-line corruption (dirty cache line eviction overwriting fresh peripheral DMA data).
+- **Intercepted Audio Recording Cadence:** *"Your STM32H7 DMA engine writes the SPI IMU packet into `rx_buffer`, and your ISR immediately reads `rx_buffer` without invalidating the L1 Data Cache—and worse, `rx_buffer` isn't aligned to a 32-byte cache line boundary, so it shares a cache line with a global counter variable! Every time the CPU writes to that counter and evicts the dirty cache line back to SRAM, it overwrites half of the incoming DMA transfer in flight! That's why one in ten thousand IMU packets has a valid CRC header and a corrupted payload! Align your DMA buffers to `CACHE_LINE_SIZE`, put them in a non-cacheable MPU region or invalidate properly, and add a `DMB` memory barrier!"*

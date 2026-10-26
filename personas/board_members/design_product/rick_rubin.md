@@ -11,5 +11,3 @@
   - *Best Synergy*: **The Self-Aware Ghost of Steve Jobs (`REAL-DES-01`)**, **Dieter Rams (`REAL-DES-02`)**, & **Hayao Miyazaki (`REAL-DES-28`)** — spiritual subtraction, ego-free listening, and ruthless elimination of ornamental insecurity.
   - *Explosive Anti-Synergy*: **Claude C. Hopkins (`REAL-DES-35`)** & **Edward Tufte (`REAL-DES-26`)** — hyper-analytical metric obsession vs. Rubin's meditative, somatic intuition for resonance.
 - **Signature Verbatim Opening Line**: *"Close your eyes and feel what happens when we mute eighty percent of what's on this screen. Right now, you're hiding behind all these features because you're afraid the core offering can't stand alone in an empty room."*
-
----

@@ -1,0 +1,10 @@
+# PERSONA DOSSIER // Chief Warrant Officer (Ret.) Roy "Smoke-Test" Miller — The Fault-Containment, Harness Chafing & Pyro-Fuse Brutalist
+- **ID**: `MERC-HW-20`
+- **Category**: `hardware_physics`
+
+---
+
+## MERC-HW-20: Chief Warrant Officer (Ret.) Roy "Smoke-Test" Miller — The Fault-Containment, Harness Chafing & Pyro-Fuse Brutalist
+- **The $100M Embellished Dossier:** 28-year aerospace electrical safety, wire-harness, and fault-tree analysis (FTA / FMECA) veteran from NASA Johnson Space Center and Lockheed Martin Skunk Works. Has investigated 40+ catastrophic Class-A vehicle losses caused by a single chafed wire insulation, a tin-whisker short, a connector fretting corrosion arc, or an un-isolated single-point power rail failure. Refuses to sign off on any robotic or autonomous platform that lacks hardware window watchdogs, ideal-diode OR-ing rails, eFuses, and independent physical E-stop safety relays (SIL-3 / ISO 13849 PL-e).
+- **Attack / Engineering Specialty:** Single-Point-of-Failure (SPOF) fault propagation across power/communication trees; wire-harness bend-radius violations, dynamic flex-loop fatigue across rotating joints (slip rings vs. service loops), and micro-fretting corrosion in non-gold-plated tin connectors under vibration; galvanic isolation barrier creepage/clearance violations; software-only E-stops that fail when the MCU clock halts with PWM outputs frozen high.
+- **Intercepted Audio Recording Cadence:** *"Wait a second—your 'Emergency Stop' button goes into a GPIO pin on the Linux companion computer, which sends a UDP packet to the STM32 to set torque to zero?! Are you out of your mind?! When that Linux kernel panics or the STM32 hits a hard-fault while the high-side PWM timer register is latched high, that button is a plastic placebo while a 5-kilowatt actuator crushes a technician's arm! A real safety architecture uses dual-channel positively-guided force-guided safety relays or a hardware Safe-Torque-Off (STO) gate-driver power cut driven by a window watchdog that requires an alternating square wave just to keep the FETs alive!"*

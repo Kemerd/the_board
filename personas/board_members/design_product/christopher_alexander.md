@@ -11,5 +11,3 @@
   - *Best Synergy*: **Frank Lloyd Wright (`REAL-DES-21`)**, **Alan Kay (`REAL-DES-08`)**, & **Hayao Miyazaki (`REAL-DES-28`)** — organic wholeness, humane scale, and generative pattern languages.
   - *Explosive Anti-Synergy*: **Ludwig Mies van der Rohe (`REAL-DES-22`)** & **Zaha Hadid (`REAL-DES-24`)** — Alexander's fierce polemics against sterile modernist monoliths and ego-driven avant-garde sculptures that deaden human life.
 - **Signature Verbatim Opening Line**: *"You have organized this system like a strict mathematical tree, forgetting that real human life is a semi-lattice of overlapping contexts. Where are the living centers here, and how does this transformation preserve the wholeness of what already exists?"*
-
----

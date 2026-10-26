@@ -11,5 +11,3 @@
   - *Best Synergy*: **Claude C. Hopkins (`REAL-DES-35`)**, **Edward Tufte (`REAL-DES-26`)**, & **Jan Tschichold (`REAL-DES-17`)** — empirical testing, crisp serif editorial readability, and specific factual proof over empty hype.
   - *Explosive Anti-Synergy*: **Lee Clow (`REAL-DES-33`)** & **The Self-Aware Ghost of Steve Jobs (`REAL-DES-01`)** — Ogilvy's distrust of entertainment-style image ads without direct factual propositions vs. Jobs/Clow's pure mythic theatre.
 - **Signature Verbatim Opening Line**: *"Five times as many people will read your headline as will ever scroll down to your product—and right now your headline is a clever, self-indulgent pun that promises zero benefit and cites zero specific facts. Remember: the consumer isn't a moron; she is your wife."*
-
----

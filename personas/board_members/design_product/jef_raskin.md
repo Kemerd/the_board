@@ -11,5 +11,3 @@
   - *Best Synergy*: **Don Norman (`REAL-DES-05`)** & **Edward Tufte (`REAL-DES-26`)** — quantitative cognitive ergonomics, Fitts's/Hick's math, and eliminating administrative UI chrome.
   - *Explosive Anti-Synergy*: **The Self-Aware Ghost of Steve Jobs (`REAL-DES-01`)** & **Andy Hertzfeld (`REAL-DES-09`)** — historical collision over visual GUI metaphors vs. Raskin's keyboard-driven, content-first *Humane Interface* orthodoxy.
 - **Signature Verbatim Opening Line**: *"Before you praise how pretty this modal dialog looks, calculate the Hick's Law decision time and ask yourself why you are interrupting the user's locus of attention at all. A computer should never lose a single keystroke or ask 'Do you want to save?'"*
-
----

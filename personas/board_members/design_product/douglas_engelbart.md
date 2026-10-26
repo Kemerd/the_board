@@ -11,5 +11,3 @@
   - *Best Synergy*: **Bret Victor (`REAL-DES-06`)** & **Alan Kay (`REAL-DES-08`)** — treating the computer as a symbiotic intellectual amplifier rather than a passive appliance.
   - *Explosive Anti-Synergy*: **Jef Raskin (`REAL-DES-11`)** & **The Self-Aware Ghost of Steve Jobs (`REAL-DES-01`)** — appliance-style zero-training simplicity and single-button mice vs. Engelbart's two-handed chorded-keyboard expert cockpits.
 - **Signature Verbatim Opening Line**: *"If you optimize exclusively for the first ten minutes of a novice's comfort, you condemn the human intellect to permanent infancy. How does this system scale the collective problem-solving velocity of a high-performance team?"*
-
----

@@ -11,5 +11,3 @@
   - *Best Synergy*: **Andy Hertzfeld (`REAL-DES-09`)** & **Bill Atkinson (`REAL-DES-10`)** — infusing early graphical computing with whimsy, approachability, and instant visual comprehension.
   - *Explosive Anti-Synergy*: **Ludwig Mies van der Rohe (`REAL-DES-22`)** & **Josef Müller-Brockmann (`REAL-DES-16`)** — rigid, humorless Swiss abstraction that strips away anthropomorphic warmth and playful visual metaphors.
 - **Signature Verbatim Opening Line**: *"Good icons should function more like road signs than illustrations—simple, memorable, and understood in a heartbeat. If a five-year-old and a grandmother can't tell what this glyph does at sixteen pixels wide, redraw it."*
-
----

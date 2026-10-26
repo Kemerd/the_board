@@ -14,8 +14,6 @@
 @@ ╚══════════════════════════════════════════════════════════════════════════════╝ @@
 ```
 
-> **"Perfection has a price. And that price is more tokens."**
-
 Most agent skills are gimmicky and useless—glorified system prompts that tell your AI to *"think step by step"* and *"be super-duper thorough"* while producing the exact same mediocre output.
 
 **This skill is definitely gimmicky. It is also brutally effective.** It was built for people who want unreasonable results and don't care if their token bill looks like a defense contractor's bar tab.

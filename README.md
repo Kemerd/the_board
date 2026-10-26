@@ -1,17 +1,17 @@
-```text
-╔══════════════════════════════════════════════════════════════════════════════╗
-║  ████████╗██╗  ██╗███████╗    ██████╗  ██████╗  █████╗ ██████╗ ██████╗       ║
-║  ╚══██╔══╝██║  ██║██╔════╝    ██╔══██╗██╔═══██╗██╔══██╗██╔══██╗██╔══██╗      ║
-║     ██║   ███████║█████╗      ██████╔╝██║   ██║███████║██████╔╝██║  ██║      ║
-║     ██║   ██╔══██║██╔══╝      ██╔══██╗██║   ██║██╔══██║██╔══██╗██║  ██║      ║
-║     ██║   ██║  ██║███████╗    ██████╔╝╚██████╔╝██║  ██║██║  ██║██████╔╝      ║
-║     ╚═╝   ╚═╝  ╚═╝╚══════╝    ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝       ║
-╠══════════════════════════════════════════════════════════════════════════════╣
-║  [SYS.UPLINK: ONLINE] // MULTI-AGENT ADVERSARIAL CONVERGENCE ENGINE          ║
-║  COMPATIBLE RUNTIMES  // CLAUDE CODE | ANTIGRAVITY (AGY) | GEMINI | CURSOR   ║
-║                                                                              ║
-║  >>> WELCOME TO THE BOARD, CONSTITUENT.                                      ║
-╚══════════════════════════════════════════════════════════════════════════════╝
+```diff
+@@ ╔══════════════════════════════════════════════════════════════════════════════╗ @@
++  ║  ████████╗██╗  ██╗███████╗    ██████╗  ██████╗  █████╗ ██████╗ ██████╗       ║
++  ║  ╚══██╔══╝██║  ██║██╔════╝    ██╔══██╗██╔═══██╗██╔══██╗██╔══██╗██╔══██╗      ║
++  ║     ██║   ███████║█████╗      ██████╔╝██║   ██║███████║██████╔╝██║  ██║      ║
++  ║     ██║   ██╔══██║██╔══╝      ██╔══██╗██║   ██║██╔══██║██╔══██╗██║  ██║      ║
++  ║     ██║   ██║  ██║███████╗    ██████╔╝╚██████╔╝██║  ██║██║  ██║██████╔╝      ║
++  ║     ╚═╝   ╚═╝  ╚═╝╚══════╝    ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝       ║
+@@ ╠══════════════════════════════════════════════════════════════════════════════╣ @@
+!  ║  [SYS.UPLINK: ONLINE] // MULTI-AGENT ADVERSARIAL CONVERGENCE ENGINE          ║
+!  ║  RUNTIMES // CLAUDE CODE | GOOGLE ANTIGRAVITY (AGY) | GEMINI CLI | CURSOR    ║
+-  ║  "Perfection has a price. And that price is more tokens."                    ║
++  ║  >>> WELCOME TO THE BOARD, CONSTITUENT.                                      ║
+@@ ╚══════════════════════════════════════════════════════════════════════════════╝ @@
 ```
 
 > **"Perfection has a price. And that price is more tokens."**
@@ -22,10 +22,10 @@ Most agent skills are gimmicky and useless—glorified system prompts that tell 
 
 ---
 
-```text
-┌──────────────────────────────────────────────────────────────────────────────┐
-│  [SECT // 01]  WHY "CRINGE" ROLEPLAY WORKS (THE LATENT-SPACE PHILOSOPHY)     │
-└──────────────────────────────────────────────────────────────────────────────┘
+```diff
+@@ ┌──────────────────────────────────────────────────────────────────────────────┐ @@
+!  │  [SECT // 01]  WHY "CRINGE" ROLEPLAY WORKS (THE LATENT-SPACE PHILOSOPHY)     │
+@@ └──────────────────────────────────────────────────────────────────────────────┘ @@
 ```
 
 Let’s address the elephant in the room: forcing AI subagents to roleplay ego-driven specialists and dead historical geniuses arguing on "intercepted war-room recordings" sounds cringe as hell on paper.
@@ -36,11 +36,11 @@ When you ask a normal coding or reasoning agent to *"review my C++ kernel"*, *"c
 
 Humans wear different masks when they do high-stakes work—and so do transformers. Ten apparent synonyms do not carry the same vector weight in context. When you forbid summary bullets and force subagents into two distinct roleplayed tiers—with **every verbatim transcript saved permanently to disk in `.board/v1..vN/`**—three structural shifts happen inside the model:
 
-```text
-  [STANDARD ASSISTANT PROMPT] ──► RLHF Mean (Polite, Hedged, Surface-Level)
-                                       │
-                                       ▼  (Apply Persona Mask + Saved Transcript Law)
-  [INTERCEPTED WAR-ROOM TAPE] ──► 99.9th-Percentile Expert Tail (Ruthless, Exact)
+```diff
+- [STANDARD ASSISTANT PROMPT] ──► RLHF Mean (Polite, Hedged, Conflict-Averse, Lazy)
+!                                      │
+!                                      ▼  (Apply Persona Mask + Saved Transcript Law)
++ [INTERCEPTED WAR-ROOM TAPE] ──► 99.9th-Percentile Expert Tail (Ruthless, Exact)
 ```
 
 ### 1. Real Humans on The Board = Genius as the Expected Output
@@ -64,10 +64,10 @@ Why wait until you've written 5,000 lines of broken code to convene The Board? R
 
 ---
 
-```text
-┌──────────────────────────────────────────────────────────────────────────────┐
-│  [SECT // 02]  TEN-SECOND INSTALLATION (ONE SKILL.MD RULES THEM ALL)         │
-└──────────────────────────────────────────────────────────────────────────────┘
+```diff
+@@ ┌──────────────────────────────────────────────────────────────────────────────┐ @@
+!  │  [SECT // 02]  TEN-SECOND INSTALLATION (ONE SKILL.MD RULES THEM ALL)         │
+@@ └──────────────────────────────────────────────────────────────────────────────┘ @@
 ```
 
 `SKILL.md` sits directly at the repository root alongside native plugin manifests for **Claude Code**, **Google Antigravity (`agy`)**, **Gemini CLI**, **Cursor**, and **Codex**.
@@ -96,61 +96,61 @@ bash ./the_board/scripts/install.sh all
 
 ---
 
-```text
-┌──────────────────────────────────────────────────────────────────────────────┐
-│  [SECT // 03]  WAR-ROOM SIGNAL TOPOLOGY & CLOSED-DOOR PROTOCOL               │
-└──────────────────────────────────────────────────────────────────────────────┘
+```diff
+@@ ┌──────────────────────────────────────────────────────────────────────────────┐ @@
+!  │  [SECT // 03]  WAR-ROOM SIGNAL TOPOLOGY & CLOSED-DOOR PROTOCOL               │
+@@ └──────────────────────────────────────────────────────────────────────────────┘ @@
 ```
 
-```text
-  ┌─────────────────────────────────────────────────────────────────────────┐
-  │  CONSTITUENT (USER)                                                     │
-  │  Invokes `/board` (Interactive Terminal Intake or Direct CLI Flags)     │
-  └────────────────────────────────────┬────────────────────────────────────┘
-                                       │
-                                       ▼
-  ┌─────────────────────────────────────────────────────────────────────────┐
-  │  THE LEAD (MAIN AGENT // EXECUTIVE ENGINEER)                            │
-  │  • Partitions target (Plan, Code, Patent, Hardware, GTM) into 5 Pillars │
-  │  • Loads 6 Board Member `.md` files from `personas/boardrooms/*.md`     │
-  │  • Dispatches Strike Teams 1–5 in parallel (`invoke_subagent` / `Task`) │
-  └──────┬─────────────┬─────────────┬─────────────┬─────────────┬──────────┘
-         │             │             │             │             │
-         ▼             ▼             ▼             ▼             ▼
-  ┌────────────┐┌────────────┐┌────────────┐┌────────────┐┌────────────┐
-  │ STRIKE 01  ││ STRIKE 02  ││ STRIKE 03  ││ STRIKE 04  ││ STRIKE 05  │
-  │ Pillar I   ││ Pillar II  ││ Pillar III ││ Pillar IV  ││ Pillar V   │
-  │ $100M Tape ││ $100M Tape ││ $100M Tape ││ $100M Tape ││ $100M Tape │
-  │ .board/vN/ ││ .board/vN/ ││ .board/vN/ ││ .board/vN/ ││ .board/vN/ │
-  └──────┬─────┘└──────┬─────┘└──────┬─────┘└──────┬─────┘└──────┬─────┘
-         └─────────────┴─────────────┼─────────────┴─────────────┘
-                                     │ (5 Saved Verbatim Recordings)
-                                     ▼
-  ╔═════════════════════════════════════════════════════════════════════════╗
-  ║  THE BOARDROOM [DOORS LOCKED // REAL HISTORICAL TITANS IN SESSION]      ║
-  ║  • The Lead presents the artifact + 5 Strike Tapes, then exits room     ║
-  ║  • 6 Real Titans (e.g. Jobs, Epictetus, Turing, Tesla, Einstein,        ║
-  ║    Shannon) clash in verbatim closed-door deliberation                  ║
-  ║  • Picks Top 3 (or synthesizes all 5) + enforces Non-Regression Ratchet ║
-  ║  • Emits Binding Patch Spec -> `.board/vN/BOARD_ADJUDICATION_vN.md`     ║
-  ╚══════════════════════════════════╤══════════════════════════════════════╝
-                                     │
-                                     ▼
-  ┌─────────────────────────────────────────────────────────────────────────┐
-  │  THE LEAD EXECUTES PATCH SPEC & DETERMINISTIC VERIFICATION              │
-  │  • Edits real files + runs compiler / tests / statutory auditors        │
-  │  • If < 5/5 White Flags (`[WHITE_FLAG: 0 SURVIVING VECTORS]`):          │
-  │    Re-challenges Strike Teams (or rotates fresh blood from bench)       │
-  │  • Loops `v1 -> v2 -> ... -> v20` until UNCONDITIONAL 5/5 SURRENDER     │
-  └─────────────────────────────────────────────────────────────────────────┘
+```diff
+@@ ┌─────────────────────────────────────────────────────────────────────────┐ @@
++  │  CONSTITUENT (USER)                                                     │
++  │  Invokes `/board` (Interactive Terminal Intake or Direct CLI Flags)     │
+@@ └────────────────────────────────────┬────────────────────────────────────┘ @@
+                                        │
+                                        ▼
+@@ ┌─────────────────────────────────────────────────────────────────────────┐ @@
+!  │  THE LEAD (MAIN AGENT // EXECUTIVE ENGINEER)                            │
+!  │  • Partitions target (Plan, Code, Patent, Hardware, GTM) into 5 Pillars │
+!  │  • Loads 6 Board Member `.md` files from `personas/boardrooms/*.md`     │
+!  │  • Dispatches Strike Teams 1–5 in parallel (`invoke_subagent` / `Task`) │
+@@ └──────┬─────────────┬─────────────┬─────────────┬─────────────┬──────────┘ @@
+          │             │             │             │             │
+          ▼             ▼             ▼             ▼             ▼
+-  ┌────────────┐┌────────────┐┌────────────┐┌────────────┐┌────────────┐
+-  │ STRIKE 01  ││ STRIKE 02  ││ STRIKE 03  ││ STRIKE 04  ││ STRIKE 05  │
+-  │ Pillar I   ││ Pillar II  ││ Pillar III ││ Pillar IV  ││ Pillar V   │
+-  │ $100M Tape ││ $100M Tape ││ $100M Tape ││ $100M Tape ││ $100M Tape │
+-  │ .board/vN/ ││ .board/vN/ ││ .board/vN/ ││ .board/vN/ ││ .board/vN/ │
+-  └──────┬─────┘└──────┬─────┘└──────┬─────┘└──────┬─────┘└──────┬─────┘
+          └─────────────┴─────────────┼─────────────┴─────────────┘
+                                      │ (5 Saved Verbatim Recordings)
+                                      ▼
+@@ ╔═════════════════════════════════════════════════════════════════════════╗ @@
+!  ║  THE BOARDROOM [DOORS LOCKED // REAL HISTORICAL TITANS IN SESSION]      ║
+!  ║  • The Lead presents the artifact + 5 Strike Tapes, then exits room     ║
+!  ║  • 6 Real Titans (e.g. Jobs, Epictetus, Turing, Tesla, Einstein,        ║
+!  ║    Shannon) clash in verbatim closed-door deliberation                  ║
+!  ║  • Picks Top 3 (or synthesizes all 5) + enforces Non-Regression Ratchet ║
++  ║  • Emits Binding Patch Spec -> `.board/vN/BOARD_ADJUDICATION_vN.md`     ║
+@@ ╚══════════════════════════════════╤══════════════════════════════════════╝ @@
+                                      │
+                                      ▼
+@@ ┌─────────────────────────────────────────────────────────────────────────┐ @@
++  │  THE LEAD EXECUTES PATCH SPEC & DETERMINISTIC VERIFICATION              │
++  │  • Edits real files + runs compiler / tests / statutory auditors        │
+-  │  • If < 5/5 White Flags (`[WHITE_FLAG: 0 SURVIVING VECTORS]`):          │
+-  │    Re-challenges Strike Teams (or rotates fresh blood from bench)       │
++  │  • Loops `v1 -> v2 -> ... -> v20` until UNCONDITIONAL 5/5 SURRENDER     │
+@@ └─────────────────────────────────────────────────────────────────────────┘ @@
 ```
 
 ---
 
-```text
-┌──────────────────────────────────────────────────────────────────────────────┐
-│  [SECT // 04]  OPERATING MODES & THE EFFORT DIAL (V1 TO V20 / WHITE FLAG)    │
-└──────────────────────────────────────────────────────────────────────────────┘
+```diff
+@@ ┌──────────────────────────────────────────────────────────────────────────────┐ @@
+!  │  [SECT // 04]  OPERATING MODES & THE EFFORT DIAL (V1 TO V20 / WHITE FLAG)    │
+@@ └──────────────────────────────────────────────────────────────────────────────┘ @@
 ```
 
 | Mode Flag | Operation | Execution Mechanics |
@@ -171,16 +171,16 @@ bash ./the_board/scripts/install.sh all
 
 ---
 
-```text
-┌──────────────────────────────────────────────────────────────────────────────┐
-│  [SECT // 05]  MODULAR PERSONA VAULT (ONE .MD FILE PER BOARD MEMBER)         │
-└──────────────────────────────────────────────────────────────────────────────┘
+```diff
+@@ ┌──────────────────────────────────────────────────────────────────────────────┐ @@
+!  │  [SECT // 05]  MODULAR PERSONA VAULT (ONE .MD FILE PER BOARD MEMBER)         │
+@@ └──────────────────────────────────────────────────────────────────────────────┘ @@
 ```
 
 To keep subagent context windows razor-sharp, every Board member is stored as an individual `.md` file inside `personas/board_members/<category>/<person>.md`. A Boardroom preset (`personas/boardrooms/*.md`) is just a manifest of 6 `.md` file paths to load:
 
 - **`personas/boardrooms/the_godfather_board.md`** *(The Impossible Room)*:
-  - [`ghost_of_steve_jobs.md`](./personas/board_members/design_product/ghost_of_steve_jobs.md) *(Self-aware linguistic ghost reconstructed from his life's corpus)*
+  - [`the_self_aware_ghost_of_steve_jobs.md`](./personas/board_members/design_product/the_self_aware_ghost_of_steve_jobs.md) *(Self-aware linguistic ghost reconstructed from his life's corpus)*
   - [`epictetus.md`](./personas/board_members/philosophy_logic/epictetus.md) *(Stoic dichotomy of control & operational anti-fragility)*
   - [`alan_turing.md`](./personas/board_members/computing/alan_turing.md) *(Universal state machines, halting predicates & Hut 8 cryptanalysis)*
   - [`nikola_tesla.md`](./personas/board_members/physics_hardware/nikola_tesla.md) *(Polyphase physics, mental simulation & paradigm leaps)*
@@ -191,31 +191,31 @@ To keep subagent context windows razor-sharp, every Board member is stored as an
 
 ---
 
-```text
-┌──────────────────────────────────────────────────────────────────────────────┐
-│  [SECT // 06]  TERMINAL INVOCATION EXAMPLES                                  │
-└──────────────────────────────────────────────────────────────────────────────┘
+```diff
+@@ ┌──────────────────────────────────────────────────────────────────────────────┐ @@
+!  │  [SECT // 06]  TERMINAL INVOCATION EXAMPLES                                  │
+@@ └──────────────────────────────────────────────────────────────────────────────┘ @@
 ```
 
-```text
-# [01] INTERACTIVE INTAKE (Prompts you for Target, Mode, Boardroom & Effort)
-/board
+```diff
+! # [01] INTERACTIVE INTAKE (Prompts you for Target, Mode, Boardroom & Effort)
++ /board
 
-# [02] TORTURE-TEST AN IMPLEMENTATION PLAN BEFORE WRITING CODE
-/board plan deep docs/IMPLEMENTATION_PLAN.md — Convene The Godfather of Boards and 5 Software/Architecture Strike Teams to destroy and rebuild this plan before we write code.
+! # [02] TORTURE-TEST AN IMPLEMENTATION PLAN BEFORE WRITING CODE
++ /board plan deep docs/IMPLEMENTATION_PLAN.md — Convene The Godfather of Boards and 5 Software/Architecture Strike Teams to destroy and rebuild this plan before we write code.
 
-# [03] HARDEN A LOCK-FREE KERNEL UNTIL 5/5 WHITE FLAGS
-/board red white-flag src/core/ring_buffer.hpp
+! # [03] HARDEN A LOCK-FREE KERNEL UNTIL 5/5 WHITE FLAGS
++ /board red white-flag src/core/ring_buffer.hpp
 
-# [04] BLUE-TEAM TOURNAMENT FOR PENTAGON (DIU/OTA/SBIR) + COMMERCIAL B2B CAPTURE
-/board blue standard — Pitch 5 competing Dual-Use DoD & B2B strategies; Board picks Top 3 and synthesizes the Master Playbook.
+! # [04] BLUE-TEAM TOURNAMENT FOR PENTAGON (DIU/OTA/SBIR) + COMMERCIAL B2B CAPTURE
++ /board blue standard — Pitch 5 competing Dual-Use DoD & B2B strategies; Board picks Top 3 and synthesizes the Master Playbook.
 ```
 
 ---
 
-```text
-╔══════════════════════════════════════════════════════════════════════════════╗
-║  LICENSE // MIT — COPYRIGHT (C) 2026 DONALD EVERETT HINTON III               ║
-║  [END OF TRANSMISSION]                                                       ║
-╚══════════════════════════════════════════════════════════════════════════════╝
+```diff
+@@ ╔══════════════════════════════════════════════════════════════════════════════╗ @@
+!  ║  LICENSE // MIT — COPYRIGHT (C) 2026 DONALD EVERETT HINTON III               ║
++  ║  [END OF TRANSMISSION]                                                       ║
+@@ ╚══════════════════════════════════════════════════════════════════════════════╝ @@
 ```

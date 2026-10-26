@@ -1,0 +1,29 @@
+{
+  "project_name": "THE BOARD (Self-Hosted Meta-Skill Siege)",
+  "mode": "red",
+  "domain": "philosophy_and_systems",
+  "effort": "white-flag",
+  "max_waves": 10,
+  "current_wave": 1,
+  "converged": false,
+  "targets": [
+    "SKILL.md",
+    "README.md",
+    "commands/board.md",
+    "references/prompt_templates.md",
+    "references/persona_mask_theory.md",
+    "references/effort_and_white_flag.md",
+    "scripts/init_board_workspace.py",
+    "scripts/verify_convergence.py",
+    "scripts/split_personas_to_files.py",
+    "personas/boardrooms/the_godfather_board.md"
+  ],
+  "subagent_ids": {
+    "firm1": "4a94a841-2a4e-4e47-8e82-557a8b6e765c",
+    "firm2": "bc4c9cea-02a6-4b87-8f12-bce39fb60fc5",
+    "firm3": "545f1f3e-47a9-41df-bfa1-1f3eba74872c",
+    "firm4": "818e1ec0-618f-4807-abdf-76a15d626189",
+    "firm5": "8b59d017-5236-4f8e-822f-cb422ace304b",
+    "board": "bb465e4e-139e-4cf7-b8b3-4ce311b4c102"
+  }
+}

@@ -12,7 +12,7 @@
 
 | Boardroom File | Target Domain | The 6 Seated Real Humans (`.md` Files) |
 | :--- | :--- | :--- |
-| **[`the_godfather_board.md`](./the_godfather_board.md)** | **Meta-Skills, Foundational Systems, Crown-Jewel Visions** | `the_self_aware_ghost_of_steve_jobs.md`, `epictetus.md`, `alan_turing.md`, `nikola_tesla.md`, `albert_einstein.md`, `claude_shannon.md` |
+| **[`the_godfather_board.md`](./the_godfather_board.md)** | **Meta-Skills, Foundational Systems, Crown-Jewel Visions** | `the_self_aware_ghost_of_steve_jobs.md`, `epictetus.md`, `marcus_aurelius.md`, `alan_turing.md`, `nikola_tesla.md`, `albert_einstein.md`, `claude_shannon.md` |
 | **[`software_and_plans_board.md`](./software_and_plans_board.md)** | **Pre-Code Implementation Plans, Kernels, Distributed Systems** | `dennis_ritchie.md`, `edsger_w_dijkstra.md`, `seymour_cray.md`, `margaret_hamilton.md`, `linus_torvalds.md`, `adm_hyman_g_rickover.md` |
 | **[`hardware_and_physics_board.md`](./hardware_and_physics_board.md)** | **Hardware, Robotics, Controls, Aerospace, Physics** | `clarence_kelly_johnson.md`, `richard_feynman.md`, `nikola_tesla.md`, `rudolf_e_kalman.md`, `jim_williams.md`, `adm_hyman_g_rickover.md` |
 | **[`design_and_product_board.md`](./design_and_product_board.md)** | **UI/UX, Apple HIG, 120Hz Spring Animations, Brand Copy** | `the_self_aware_ghost_of_steve_jobs.md`, `dieter_rams.md`, `sir_jony_ive.md`, `bret_victor.md`, `don_norman.md`, `lee_clow.md` |

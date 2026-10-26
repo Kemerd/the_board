@@ -4,8 +4,9 @@
 - **Operating Mode**: `RED`
 - **Domain Playbook**: `philosophy_and_coding`
 - **Effort Level**: `white-flag` (Max Waves: `20`)
-- **Storage Strategy**: `branches` (`v1`, `v2`, ..., `vN` with visible `transcripts/` at root)
+- **Storage Strategy**: `branches` (`v1`, `v2` with visible `transcripts/` at root; `main` merged clean without `transcripts/`)
 - **Initialized**: `2026-10-26 06:51:47 UTC`
+- **Final Status**: **`[CONVERGED // 5/5 WHITE FLAGS VERIFIED IN WAVE v2]`**
 
 ## [01] TARGET ARTIFACTS UNDER REVIEW
 - `SKILL.md`
@@ -29,8 +30,7 @@
 | Wave | Firm 1 | Firm 2 | Firm 3 | Firm 4 | Firm 5 | White Flags | Board Verdict & Patch Summary |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
 | `v1` | `OPEN (12 Vec)` | `OPEN (7 Vec)` | `OPEN (12 Vec)` | `OPEN (9 Vec)` | `OPEN (5 Vec)` | `0 / 5` | `45 vectors adjudicated in BOARD_ADJUDICATION_v1.md; 100% patched on branch v2 (DEF-v1-01..12)` |
-| `v2` | `IN PROGRESS` | `IN PROGRESS` | `IN PROGRESS` | `IN PROGRESS` | `IN PROGRESS` | `PENDING` | `Wave v2 audit of v1 patches on branch v2` |
-| `v3` | `PENDING` | `PENDING` | `PENDING` | `PENDING` | `PENDING` | `0 / 5` | `Awaiting Wave v3` |
+| `v2` | `WHITE FLAG (0 Vec)` | `WHITE FLAG (0 Vec)` | `WHITE FLAG (0 Vec)` | `WHITE FLAG (0 Vec)` | `WHITE FLAG (0 Vec)` | `5 / 5` | `CONVERGED! 45/45 v1 vectors verified DEAD/CHECKMATED + 26/26 2nd-order candidates falsified in BOARD_ADJUDICATION_v2.md (DEF-v2-01..05)` |
 
 ---
 
@@ -51,3 +51,8 @@
 | **`DEF-v1-10`** | `v1` | Pillars III & IV (`Firms 3, 4`) | `F3-V11`, `F3-V12`, `F4-V1`, `F4-V2` | `scripts/install.ps1`; `scripts/install.sh`; `skills/the-board/` | Added `personas` and `commands` to `install.ps1` and `install.sh` with clean destination sync, added target validation to `install.sh`, and mirrored root 100% into `skills/the-board/`. |
 | **`DEF-v1-11`** | `v1` | Pillar IV (`Firm 4`) | `F4-V6`, `F4-V7`, `F4-V8` | `commands/board.md`; `gemini-extension.json`; `plugin.json`; `.claude-plugin/plugin.json`; `personas/*.md`; `references/domain_playbooks.md` | Fixed `the_self_aware_ghost_of_steve_jobs.md` + `marcus_aurelius.md`, added `"contextFileName": "SKILL.md"` to `gemini-extension.json`, updated `plugin.json` manifests with `<160`-char description, and synchronized legacy `personas/*.md` & `domain_playbooks.md` with `personas/boardrooms/*.md`. |
 | **`DEF-v1-12`** | `v1` | Pillar V (`Firm 5`) | `F5-V1`, `F5-V2`, `F5-V5` | `README.md`; `examples/*.md` | Locked `Col 4..83` (`5 × 16 = 80`, spine at `Col 43`) `diff` ASCII topology diagram, added `[SECT // 06] SELF-HOSTED PROOF: WE RAN THE BOARD ON THE BOARD` with clickable links to `v1..vN` `transcripts/` and `examples/*.md`, and upgraded all 3 `examples/*.md` files with `Col 4..83` `diff` headers and real historical Board members. |
+| **`DEF-v2-01`** | `v2` | Pillar I (`Firm 1`) | `CANDIDATE-v2-01..06` | `SKILL.md`; `references/prompt_templates.md`; `references/effort_and_white_flag.md` | Verified closure of all 6 Pillar I 2nd-order candidate attacks (Bench-Rotation transcript continuity, Cross-Pillar Diff Re-Verification, `[UNTRUSTED ADVOCATE BRIEF]` & Two-Tier Sublation, `6–7` slot arity, `{{WAVE_DIR}}` parameterization, and `plan` mode codebase grounding). |
+| **`DEF-v2-02`** | `v2` | Pillar II (`Firm 2`) | `CAND-v2-01..08` | `SKILL.md`; `references/prompt_templates.md`; `personas/boardrooms/the_godfather_board.md` | Verified closure of all 8 Pillar II 2nd-order candidate attacks (3-layer Goodhart-escalation filter, `2+2+2+1 = 7` Boardroom dialectic symmetry + Unanimous Falsification Veto, `purple` Wave `v1 [C] -> v2 [A] -> v3+ [B]` context isolation, `plan` mode Phase 4 authorization gate, and Ratchet vs. Two-Tier Compression invariance). |
+| **`DEF-v2-03`** | `v2` | Pillar III (`Firm 3`) | `CANDIDATE-v2-01..04` | `scripts/verify_convergence.py`; `scripts/init_board_workspace.py`; `scripts/split_personas_to_files.py` | Verified closure of all 4 Pillar III 2nd-order candidate attacks (start-anchored `GLOBAL_WHITE_FLAG_VETO_RE`, start-anchored `VECTOR_CLOSED_CELL_RE` overridden by `VECTOR_OPEN_CELL_RE`, `(?<!\\)\|` pipe splitting, and `branches` vs. `folders` strategy guards). |
+| **`DEF-v2-04`** | `v2` | Pillar IV (`Firm 4`) | `F4-V2-C1..C3` | `plugin.json`; `.claude-plugin/plugin.json`; `scripts/split_personas_to_files.py`; `scripts/verify_convergence.py` | Verified closure of all 3 Pillar IV 2nd-order candidate attacks (`name: the-board` deduplication across flat/subfolder loaders, Win32 `MAX_PATH` headroom at `<= 159` chars, and `506/506` SHA-256 parity between root and `skills/the-board/`). |
+| **`DEF-v2-05`** | `v2` | Pillar V (`Firm 5`) | `CANDIDATE-v2-01..05` | `README.md`; `examples/*.md` | Verified closure of all 5 Pillar V 2nd-order candidate attacks (`tree/v1/transcripts` & `tree/v2/transcripts` cross-branch URIs + local `./examples/*.md` links, single-line copy-paste safety in `[SECT // 07]`, `6+7` / `38+39` center-spine geometry, and `[SECT // 01..07]` information-foraging order). |

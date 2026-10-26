@@ -115,18 +115,13 @@ AFFIRMATIVE_WHITE_FLAG_RE = re.compile(
 
 # Document-wide explicit White-Flag rejection / revocation phrases
 GLOBAL_WHITE_FLAG_VETO_RE = re.compile(
-    r"(?:"
+    r"^\s*(?:[`*_+#!]|-(?!\s))*\s*\[\s*(?:"
     r"STATUS\s*:\s*WHITE[\s\-]+FLAG\s+WITHHELD"
-    r"|OPEN\s+VECTORS\s+REMAIN"
-    r"|WHITE[\s\-]+FLAG\s+WITHHELD"
-    r"|WHITE[\s\-]+FLAG\s+DENIED"
-    r"|WHITE[\s\-]+FLAG\s+REJECTED"
-    r"|WHITE[\s\-]+FLAG\s+REVOKED"
+    r"|STATUS\s*:\s*OPEN\s+VECTORS\s+REMAIN"
+    r"|WHITE[\s\-]+FLAG\s+(?:WITHHELD|DENIED|REJECTED|REVOKED)\b"
     r"|NO\s+WHITE[\s\-]+FLAG\s+RAISED"
-    r"|0\s*/\s*1\s*WHITE[\s\-]+FLAG"
-    r"|0\s*/\s*5\s*WHITE[\s\-]+FLAGS"
     r")",
-    re.IGNORECASE,
+    re.IGNORECASE | re.MULTILINE,
 )
 
 # Line-level negation or conditional tokens that invalidate a White-Flag match on that line
@@ -217,9 +212,9 @@ def count_open_vectors(markdown_text: str) -> int:
 
         # Check if any short status cell (`<= 45` chars) marks this vector as closed/neutralized
         is_closed_row = any(
-            len(c) <= 45 and VECTOR_CLOSED_CELL_RE.search(c) for c in cells
+            VECTOR_CLOSED_CELL_RE.search(c) for c in cells
         ) and not any(
-            len(c) <= 45 and VECTOR_OPEN_CELL_RE.search(c) for c in cells
+            VECTOR_OPEN_CELL_RE.search(c) for c in cells
         )
         if is_closed_row:
             continue

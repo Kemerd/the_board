@@ -4,8 +4,8 @@
   "domain": "philosophy_and_systems",
   "effort": "white-flag",
   "max_waves": 10,
-  "current_wave": 1,
-  "converged": false,
+  "current_wave": 2,
+  "converged": true,
   "targets": [
     "SKILL.md",
     "README.md",
@@ -25,5 +25,6 @@
     "firm4": "818e1ec0-618f-4807-abdf-76a15d626189",
     "firm5": "8b59d017-5236-4f8e-822f-cb422ace304b",
     "board": "bb465e4e-139e-4cf7-b8b3-4ce311b4c102"
-  }
+  },
+  "strategy": "branches"
 }
